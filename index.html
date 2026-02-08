@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Teste de Deep Link</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        max-width: 400px;
+        margin: auto;
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      input,
+      select,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 16px;
+      }
+      button {
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      .link {
+        margin-top: 20px;
+        word-break: break-all;
+      }
+      .footer {
+        margin-top: 40px;
+        font-size: 12px;
+        color: #777;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Teste de Deep Link</h2>
+
+    <label>Ambiente</label>
+    <select id="env">
+      <option value="dev">DEV</option>
+      <option value="prod">PROD</option>
+    </select>
+
+    <label>Tipo</label>
+    <select id="type">
+      <option value="evento">Evento</option>
+      <option value="oferta">Oferta</option>
+    </select>
+
+    <label>ID do Evento / Oferta</label>
+    <input id="id" type="number" placeholder="Ex: 3063539" />
+
+    <button onclick="openDeepLink()">Abrir no App</button>
+
+    <div class="link" id="generatedLink"></div>
+
+    <div class="footer">by Bruno</div>
+
+    <script>
+      function openDeepLink() {
+        const env = document.getElementById("env").value;
+        const type = document.getElementById("type").value;
+        const id = document.getElementById("id").value;
+
+        if (!id) {
+          alert("Informe o ID do evento ou da oferta");
+          return;
+        }
+
+        const scheme = env === "dev" ? "sbxdev" : "sbx";
+        const link = `${scheme}://${type}/${id}`;
+
+        document.getElementById(
+          "generatedLink"
+        ).innerText = `Link gerado: ${link}`;
+
+        window.location.href = link;
+      }
+    </script>
+  </body>
+</html>
