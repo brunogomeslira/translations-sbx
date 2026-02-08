@@ -1,0 +1,2412 @@
+{
+  "paymentIssues": {
+    "backToPayment": "Voltar ao pagamento",
+    "failure": {
+      "title": "Falha na autenticação de segurança",
+      "description": "Não foi possível inicializar a autenticação 3DS junto ao seu banco. Isso pode acontecer se o desafio 3DS não for concluído a tempo ou corretamente. Veja abaixo as possíveis causas e como resolver.",
+      "items": {
+        "checkChallenge": {
+          "title": "Verifique o desafio",
+          "description": "Se foram apresentadas as orientações sobre o desafio do seu emissor, veja se recebeu o código ou notificação do banco por SMS, WhatsApp ou no aplicativo."
+        },
+        "checkCard": {
+          "title": "Cheque seu cartão",
+          "description": "Certifique-se de que o cartão físico ou virtual está válido e habilitado para compras online. Se houver algum tipo de bloqueio, você não receberá as informações do desafio."
+        },
+        "enableNotifications": {
+          "title": "Ative as notificações",
+          "description": "Se o banco usa autenticação via app, garanta que as notificações estão ativadas ou busque por orientações na área de gerenciamento de cartões do aplicativo."
+        },
+        "updateData": {
+          "title": "Atualize seus dados",
+          "description": "Confirme se o número do seu celular está atualizado e se você não bloqueou mensagens do banco. E fique atento que cartões de pessoas jurídicas normalmente usam SMS e o celular inicialmente cadastrado pode não ser o seu."
+        }
+      },
+      "footerTitle": "Ainda com problema?",
+      "footerDescription": "Se você não recebeu as orientações do emissor aqui na tela, desbloqueou seu cartão ou atualizou algum dado, tente novamente. Se mesmo assim o pagamento continua não sendo autorizado, entre em contato com a Central de Atendimento do seu cartão e explique que está fazendo uma compra online na Superbid com 3DS."
+    },
+    "unauthorized": {
+      "title": "Pagamento não autorizado pelo banco",
+      "description": "A verificação de segurança foi concluída, mas o banco emissor não autorizou o pagamento. Veja abaixo as possíveis causas e como resolver.",
+      "items": {
+        "antifraudBlock": {
+          "title": "Bloqueio por antifraude",
+          "description": "O banco pode ter bloqueado a compra por segurança se o valor estiver fora do seu padrão de gastos. Dependendo do emissor do seu cartão você pode conseguir consultar essa informação no aplicativo."
+        },
+        "cardProblems": {
+          "title": "Problemas com o cartão",
+          "description": "O cartão físico ou virtual pode estar expirado ou desabilitado para compras online. Verifique no app do banco."
+        },
+        "usageLimit": {
+          "title": "Limite de uso",
+          "description": "O valor da compra pode ter ultrapassado o limite disponível para transações online. Ajuste o limite ou use outro cartão."
+        },
+        "wrongData": {
+          "title": "Dados incorretos",
+          "description": "Confirme se número, validade e código de segurança (CVV) foram digitados corretamente. Em cartões virtuais, o CVV pode mudar a cada compra."
+        }
+      },
+      "footerTitle": "Ainda com problema?",
+      "footerDescription": "Se você já atualizou alguma das informações acima, tente novamente. Se mesmo assim o pagamento continua não sendo autorizado, entre em contato com a Central de Atendimento do seu cartão e explique que está fazendo uma compra online na Superbid com 3DS."
+    }
+  },
+  "paymentTimeout": {
+    "title": "Autenticação não realizada",
+    "description": "Caso não tenha recebido nenhuma comunicação do seu banco, tente novamente.",
+    "tryAgain": "Tentar novamente",
+    "connectTitle": "Conectando com o seu banco",
+    "connectDescription": "Isso leva apenas alguns segundos."
+  },
+  "paymentAuthIntro": {
+    "title": "Seu pagamento será autenticado com segurança",
+    "description1": "Para proteger seus dados, usamos uma verificação extra (3DS) feita diretamente pelo seu banco.",
+    "description2": "Ela confirma que é você quem está realizando o pagamento antes da aprovação final.",
+    "howTitle": "Como isso acontece",
+    "howDescription1": "Seu banco pode pedir uma confirmação rápida, como um código por SMS ou WhatsApp, uma notificação no app do banco ou um token temporário.",
+    "howDescription2": "Tenha seu celular por perto e siga as instruções que aparecerem.",
+    "cta": "Iniciar autenticação"
+  },
+  "welcome": {
+    "title": "App Wallet Superbid",
+    "description": "Um aplicativo completo para você controlar seus ativos.",
+    "signIn": "Entrar",
+    "signUp": "Quero me cadastrar"
+  },
+  "onboarding": {
+    "title": "Boas-vindas à Superbid.",
+    "description": "Crie sua conta.",
+    "registrationType": "O cadastro é de pessoa física ou jurídica?",
+    "phoneNumber": {
+      "pf": {
+        "title": "Qual o seu telefone?",
+        "description": "Forneça seu telefone para facilitar nossa comunicação posterior."
+      },
+      "pj": {
+        "title": "Qual o seu telefone celular?",
+        "description": "Este telefone será utilizado para confirmar a sua identidade."
+      },
+      "phone": "Telefone",
+      "placeholder": "(99) 99999-9999"
+    },
+    "confirmPhoneNumber": {
+      "title": "Confirmação de telefone",
+      "description": "Um código foi enviado para o WhatsApp do número %{ddi} %{phoneNumber}",
+      "incorrectPhoneNumber": "este número está incorreto",
+      "insertReceivedCode": "Insira o código recebido abaixo:",
+      "whatsappIssues": "Problemas com WhatsApp?",
+      "sendBySms": "Enviar por SMS",
+      "resendIn": "Enviar novamente em %{resendSeconds}s",
+      "tryAgain": "Reenviar código"
+    },
+    "email": {
+      "title": "Em qual e-mail podemos falar com você?",
+      "description": "Esse será o e-mail utilizado para comunicações.",
+      "email": "E-mail",
+      "placeholder": "Seu e-mail"
+    },
+    "confirmEmail": {
+      "title": "Confirmação de e-mail",
+      "description": "Um código foi enviado para o e-mail %{email}",
+      "incorrectEmail": "este e-mail está incorreto",
+      "insertReceivedCode": "Insira o código recebido abaixo:",
+      "resendIn": "Enviar novamente em %{resendSeconds}s",
+      "emailIssues": "Não recebeu o e-mail?",
+      "tryAgain": "Reenviar código"
+    },
+    "address": {
+      "title": "Endereço",
+      "pf": {
+        "title": "Qual o seu endereço?",
+        "description": "Insira seu endereço para prosseguir com o cadastro."
+      },
+      "pj": {
+        "title": "Qual o endereço da empresa?",
+        "description": "Insira endereço da empresa para continuar."
+      },
+      "dontKnowMyZipCode": "Não sei meu CEP",
+      "zipCode": "CEP",
+      "street": "Rua/Avenida",
+      "number": "Número",
+      "complement": "Complemento (opcional)",
+      "neighborhood": "Bairro",
+      "district": "Bairro",
+      "city": "Cidade",
+      "state": "Estado",
+      "editAddress": "Editar endereço",
+      "noNumber": "Sem número",
+      "noNumberAbbreviation": "S/N"
+    },
+    "createAccount": {
+      "pf": {
+        "title": "Para finalizar, crie um nome de usuário e uma senha para acessar o app.",
+        "description": "Esses dados serão usados para você acessar o app."
+      },
+      "pj": {
+        "title": "Crie um nome de usuário e uma senha para acessar o aplicativo",
+        "description": "Esses dados serão usados para você acessar o aplicativo"
+      },
+      "username": "Nome de usuário",
+      "password": "Senha",
+      "confirmPassword": "Digite a senha novamente",
+      "passwordProtection": "Proteja sua senha utilizando:",
+      "specialChars": "Caracteres especiais",
+      "uppercase": "Letras maiúsculas",
+      "numbers": "Números",
+      "lowercase": "Letras minúsculas",
+      "minLength": "Mínimo 8 caracteres",
+      "termsAgreement1": "Li e concordo com a criação da conta digital gratuita sbXPAY - conta de pagamento utilizada exclusivamente para a realização de transações na Superbid Exchange.",
+      "termsAgreement2": "Li e concordo com as regras e condições de uso da Superbid Exchange, conforme previsto nos ",
+      "termsAgreement3": "Termos e Condições de Uso da Superbid Exchange e da Conta Digital sbXPAY.",
+      "termsAgreement4": "Li o ",
+      "termsAgreement5": "Aviso de Privacidade ",
+      "termsAgreement6": "e estou ciente do tratamento dos meus dados pessoais."
+    },
+    "createAccountError": {
+      "title": "Ocorreu um erro ao criar a sua conta",
+      "description": "Não foi possível salvar os dados no momento, por favor tente novamente."
+    },
+    "pf": {
+      "title": "Pessoa física",
+      "cpf": {
+        "title": "Qual o seu CPF?",
+        "description": "Precisamos dele para continuar o seu cadastro.",
+        "cpf": "CPF",
+        "placeholder": "000.000.000-00"
+      },
+      "personalData": {
+        "title": "Preencha os seus dados pessoais",
+        "description": "Precisamos dos seus dados para prosseguirmos.",
+        "fullName": "Nome completo",
+        "birthDate": "Data de nascimento",
+        "gender": "Gênero",
+        "female": "Feminino",
+        "male": "Masculino",
+        "isPubliclyExposedPerson": "Declaro que sou uma Pessoa Publicamente Exposta"
+      },
+      "rg": {
+        "title": "Preencha as informações assim como seu documento RG",
+        "description": "Preencha com seus dados e número do RG.",
+        "civilState": "Estado civil",
+        "rg": "RG",
+        "motherName": "Nome da mãe completo",
+        "motherNameTitle": "Nome da mãe completo"
+      }
+    },
+    "pj": {
+      "title": "Pessoa jurídica",
+      "legalRole": {
+        "title": "Dados pessoais",
+        "description": "Você é sócio (a) representante legal ou procurador da empresa? Apenas um dos sócios, representantes ou procuradores será responsável pela conta de pessoa jurídica na sbXPAY. Vamos validar sua identidade com reconhecimento facial no final do processo. Tenha em mãos seu RG ou CNH e procuração, se for procurador.",
+        "partnerOrLegalRepresentative": "Sou sócio(a) ou representante legal",
+        "procurator": "Sou procurador"
+      },
+      "companyRepresentative": {
+        "title": "Dados pessoais",
+        "description": "Você é sócio (a) representante legal ou procurador da empresa? Apenas um dos sócios, representantes ou procuradores será responsável pela conta de pessoa jurídica na sbXPAY. Vamos validar sua identidade com reconhecimento facial no final do processo. Tenha em mãos seu RG ou CNH e procuração, se for procurador.",
+        "partnerOrLegalRepresentative": "Sou sócio(a) ou representante legal",
+        "procurator": "Sou procurador"
+      },
+      "cnpj": {
+        "title": "Qual o seu CNPJ?",
+        "description": "Precisamos dele para continuar o seu cadastro.",
+        "cnpj": "CNPJ"
+      },
+      "personalData": {
+        "title": "Dados pessoais",
+        "description": "Precisamos dos seus dados para continuar.",
+        "fullName": "Nome completo",
+        "birthDate": "Data de nascimento",
+        "gender": "Gênero",
+        "female": "Feminino",
+        "male": "Masculino",
+        "civilState": "Estado civil",
+        "cpf": "CPF",
+        "rg": "RG",
+        "motherName": "Nome da mãe completo"
+      },
+      "businessData": {
+        "title": "Dados comerciais",
+        "description": "Precisamos dos seus dados para prosseguirmos.",
+        "cnpj": "CNPJ",
+        "cnae": "Atividade econômica (CNAE)",
+        "companyName": "Razão social",
+        "fantasyName": "Nome fantasia",
+        "typeOfIncorporation": "Forma de constituição",
+        "stateRegistration": "Registro Estadual",
+        "municipalRegistration": "Registro Municipal",
+        "mobilePhone": "Telefone celular",
+        "landlinePhone": "Telefone fixo",
+        "free": "Isento",
+        "eireli": "EIRELI",
+        "ltda": "LTDA",
+        "me": "ME",
+        "sa": "SA"
+      },
+      "rgOrCnh": {
+        "partner": {
+          "title": "RG ou CNH do sócio vinculado",
+          "description": "Preencha as informações e insira um único arquivo que contenha a frente e o verso do documento dentro do prazo de validade"
+        },
+        "procurator": {
+          "title": "RG ou CNH do procurador",
+          "description": "Preencha as informações e insira um único arquivo que contenha a frente e o verso do documento dentro do prazo de validade"
+        },
+        "documentType": "Tipo do documento",
+        "issueDate": "Data de emissão",
+        "expirationDate": "Data de expiração"
+      },
+      "procuration": {
+        "title": "Procuração",
+        "description": "Insira um único arquivo dentro do prazo de validade que discrimine os poderes do procurador que está se cadastrando"
+      },
+      "proofOfAddress": {
+        "title": "Comprovante de endereço dos últimos 90 dias em nome da empresa",
+        "description": "Preencha as informações e insira um único arquivo referente ao endereço cadastrado na sua conta",
+        "issueDate": "Data de emissão"
+      }
+    }
+  },
+  "events": {
+    "title": "Eventos terminando em breve (%{count})",
+    "chooseCategory": "Navegue pelas categorias",
+    "nextEnding": "Próximo evento terminando",
+    "following": "Eventos seguintes",
+    "visitationAvailable": "Visitação disponível",
+    "endingSoon": "Terminando em breve",
+    "details": {
+      "consultDetails": "Condições do evento",
+      "enable": "Habilite-se",
+      "enabled": "Habilitado",
+      "pending": "Pendente",
+      "continueHabilitation": "Continuar habilitação",
+      "searchPlaceholder": "Buscar neste evento",
+      "online": "Online",
+      "category": "Categoria",
+      "subcategory": "Subcategoria",
+      "productTitle": "Produto",
+      "endsAt": "Encerra em",
+      "defaultEndDate": "Encerra em 29/07/2024 às 14:03 (São Paulo)",
+      "eventDescription": "Evento com oportunidades especiais para você",
+      "highlightedStore": "Loja em destaque",
+      "questionRoom": "Sala de perguntas disponível",
+      "smsRegistration": "Registro via SMS disponível",
+      "subMarketplaces": "Submercados",
+      "defaultBenefit1": "Oportunidades especiais",
+      "defaultBenefit2": "Condições diferenciadas",
+      "resultsFound": "anúncios encontrados",
+      "sortBy": "Ordem: relevância",
+      "filters": "Filtros",
+      "all": "Todas",
+      "dropDownPlaceholder": "Negociação",
+      "currentBid": "Lance atual:",
+      "bids": "lances",
+      "paymentCard": "Em até 12x no cartão",
+      "lotNumber": "Lote",
+      "visits": "visitas",
+      "discount": "desconto",
+      "sort": {
+        "lotNumber": "Número do Lote",
+        "relevance": "Relevância",
+        "highestPrice": "Maior valor",
+        "lowestPrice": "Menor valor",
+        "mostVisited": "Mais visitados",
+        "endDate": "Data de encerramento"
+      }
+    },
+    "filters": {
+      "placeholder": "Tipos de evento",
+      "negotiationPlaceholder": "Tipos de negociação",
+      "types": {
+        "all": "Todos",
+        "corporate": "Corporativo",
+        "pme": "PME",
+        "gov": "GOV",
+        "rural": "Rural",
+        "beneficent": "Beneficente",
+        "judicial": "Judicial"
+      },
+      "negotiationTypes": {
+        "all": "Todos",
+        "auction": "Leilão",
+        "directSale": "Tomada de preço",
+        "shopping": "Mercado Balcão / Compre já",
+        "raffle": "Sorteio"
+      }
+    },
+    "habilitation": {
+      "modalTitle": "Habilitação",
+      "errors": {
+        "financialAccountRequired": {
+          "title": "Conta financeira obrigatória",
+          "message": "Para participar deste leilão é necessário possuir uma conta financeira ativa. Por favor, crie ou ative sua conta financeira.",
+          "button": "Criar conta"
+        },
+        "badRequest": {
+          "title": "Requisição inválida",
+          "message": "Os dados enviados estão incorretos ou incompletos.",
+          "button": "Tentar novamente"
+        },
+        "dev": {
+          "title": "Em desenvolvimento",
+          "message": "Tela em desenvolvimento para o proximo pacote",
+          "button": "Ok"
+        },
+        "generic": {
+          "title": "Erro na habilitação",
+          "message": "Ocorreu um erro ao processar sua habilitação. Tente novamente.",
+          "button": "Tentar novamente"
+        },
+        "phoneValidation": {
+          "title": "Erro na validação do telefone",
+          "message": "Não foi possível validar seu telefone. Verifique o número e tente novamente.",
+          "button": "Tentar novamente"
+        },
+        "documentValidation": {
+          "title": "Erro na validação de documentos",
+          "message": "Não foi possível validar seus documentos. Verifique e tente novamente.",
+          "button": "Tentar novamente"
+        },
+        "paymentError": {
+          "title": "Erro no pagamento",
+          "message": "Não foi possível processar o pagamento. Tente novamente.",
+          "button": "Tentar novamente"
+        },
+        "accessDenied": {
+          "title": "Acesso negado",
+          "message": "Você não possui permissão para acessar este evento.",
+          "button": "Entendi"
+        },
+        "networkError": {
+          "title": "Erro de conexão",
+          "message": "Verifique sua conexão com a internet e tente novamente.",
+          "button": "Tentar novamente"
+        },
+        "sessionExpired": {
+          "title": "Sessão expirada",
+          "message": "Sua sessão expirou. Por favor, faça login novamente.",
+          "button": "Fazer login"
+        },
+        "api": {
+          "eventStepNotFound": {
+            "title": "Step não encontrado",
+            "message": "O passo de habilitação solicitado não foi encontrado. Tente recarregar a página.",
+            "button": "Recarregar"
+          },
+          "auctionNotFound": {
+            "title": "Leilão não encontrado",
+            "message": "O leilão que você está tentando acessar não está disponível.",
+            "button": "Voltar"
+          },
+          "userNotFound": {
+            "title": "Usuário não encontrado",
+            "message": "Não foi possível identificar seu usuário. Faça login novamente.",
+            "button": "Fazer login"
+          },
+          "userNotActive": {
+            "title": "Usuário inativo",
+            "message": "Sua conta não está ativa. Entre em contato com o suporte.",
+            "button": "Contatar suporte"
+          },
+          "userNotValidStatus": {
+            "title": "Status inválido",
+            "message": "Sua conta aguarda liberação de contrato. Em breve você receberá uma notificação.",
+            "button": "Entendi"
+          },
+          "auctionRegistrationDeny": {
+            "title": "Habilitação negada",
+            "message": "Este leilão não permite habilitação no momento ou você não atende aos requisitos.",
+            "button": "Entendi"
+          },
+          "financialAccountRequired": {
+            "title": "Conta financeira obrigatória",
+            "message": "Para participar deste leilão é necessário possuir uma conta financeira ativa. Por favor, crie ou ative sua conta financeira.",
+            "button": "Criar conta"
+          },
+          "financial-account-required-for-auction": {
+            "title": "Conta financeira obrigatória",
+            "message": "Para participar deste leilão é necessário possuir uma conta financeira ativa. Por favor, crie ou ative sua conta financeira.",
+            "button": "Criar conta"
+          },
+          "otpPhoneLimitReached": {
+            "title": "Limite de tentativas",
+            "message": "Você atingiu o limite de solicitações de código por telefone. Tente usar e-mail.",
+            "button": "Enviar por e-mail"
+          },
+          "otpPhoneNotEnabled": {
+            "title": "SMS não disponível",
+            "message": "O envio de SMS não está habilitado para seu tipo de conta. Use e-mail.",
+            "button": "Enviar por e-mail"
+          },
+          "otpInvalid": {
+            "title": "Código inválido",
+            "message": "O código digitado está incorreto ou expirou. Solicite um novo código.",
+            "button": "Solicitar novo código"
+          },
+          "otpNotFound": {
+            "title": "Código OTP inválido",
+            "message": "Código OTP inválido",
+            "button": "Tentar novamente"
+          },
+          "otp.phone.limit.reached": {
+            "title": "Limite de tentativas atingido",
+            "message": "Você atingiu o limite de solicitações de código por telefone. Tente novamente em alguns minutos ou use e-mail.",
+            "button": "Enviar por e-mail"
+          },
+          "otp_not_found": {
+            "title": "Código não encontrado",
+            "message": "O código digitado não foi encontrado ou já expirou. Solicite um novo código.",
+            "button": "Solicitar novo código"
+          },
+          "otp.invalid": {
+            "title": "Código inválido",
+            "message": "O código digitado está incorreto. Verifique e tente novamente.",
+            "button": "Tentar novamente"
+          },
+          "otp.expired": {
+            "title": "Código expirado",
+            "message": "O código digitado expirou. Solicite um novo código.",
+            "button": "Solicitar novo código"
+          },
+          "userAuctionMismatchStep": {
+            "title": "Step inválido",
+            "message": "Este passo não corresponde ao tipo correto de validação.",
+            "button": "Voltar"
+          },
+          "acceptConditionMissing": {
+            "title": "Condições pendentes",
+            "message": "Você precisa aceitar todas as condições obrigatórias para continuar.",
+            "button": "Voltar"
+          },
+          "userStepNotFound": {
+            "title": "Passo não encontrado",
+            "message": "O passo de habilitação não foi encontrado. Tente recarregar.",
+            "button": "Recarregar"
+          },
+          "userStepInvalid": {
+            "title": "Passo inválido",
+            "message": "Este passo não é válido para a ação solicitada.",
+            "button": "Voltar"
+          },
+          "userForbidden": {
+            "title": "Acesso negado",
+            "message": "Você não tem permissão para realizar esta ação.",
+            "button": "Voltar"
+          },
+          "userBlockedAllOffers": {
+            "title": "Acesso bloqueado",
+            "message": "Você está bloqueado para participar de todas as ofertas deste leilão.",
+            "button": "Entendi"
+          },
+          "documentRepeated": {
+            "title": "Documento duplicado",
+            "message": "Você está tentando enviar o mesmo tipo de documento mais de uma vez.",
+            "button": "Corrigir"
+          },
+          "documentNotFound": {
+            "title": "Documento não encontrado",
+            "message": "O documento solicitado não foi encontrado ou já foi excluído.",
+            "button": "Voltar"
+          },
+          "documentTypeNotFound": {
+            "title": "Tipo inválido",
+            "message": "O tipo de documento enviado não é reconhecido pelo sistema.",
+            "button": "Voltar"
+          },
+          "noSubStepsFound": {
+            "title": "Nenhum documento necessário",
+            "message": "Não foram encontrados documentos necessários para este leilão.",
+            "button": "Continuar"
+          },
+          "paymentFailed": {
+            "title": "Pagamento falhou",
+            "message": "Não foi possível processar seu pagamento. Verifique seus dados e tente novamente.",
+            "button": "Tentar novamente"
+          },
+          "paymentCancelled": {
+            "title": "Pagamento cancelado",
+            "message": "O pagamento foi cancelado. Você pode tentar novamente.",
+            "button": "Tentar novamente"
+          },
+          "insufficientFunds": {
+            "title": "Saldo insuficiente",
+            "message": "Você não possui saldo suficiente para completar este pagamento.",
+            "button": "Entendi"
+          },
+          "invalidPhoneFormat": {
+            "title": "Formato inválido",
+            "message": "O número de telefone informado está em formato inválido.",
+            "button": "Corrigir"
+          },
+          "invalidPhoneType": {
+            "title": "Tipo inválido",
+            "message": "O tipo de telefone informado não é válido.",
+            "button": "Corrigir"
+          },
+          "phoneAccessDenied": {
+            "title": "Acesso negado",
+            "message": "Este número de telefone não pertence ao seu usuário.",
+            "button": "Voltar"
+          },
+          "phoneNotFound": {
+            "title": "Telefone não encontrado",
+            "message": "O número de telefone informado não foi encontrado.",
+            "button": "Voltar"
+          },
+          "invalidDDD": {
+            "title": "DDD inválido",
+            "message": "O código DDD informado não é válido para o Brasil.",
+            "button": "Corrigir"
+          },
+          "invalidNumberLength": {
+            "title": "Tamanho inválido",
+            "message": "O tamanho do número não corresponde ao tipo de telefone.",
+            "button": "Corrigir"
+          },
+          "badRequest": {
+            "title": "Requisição inválida",
+            "message": "Os dados enviados estão incorretos ou incompletos.",
+            "button": "Tentar novamente"
+          },
+          "unauthorized": {
+            "title": "Não autorizado",
+            "message": "Sua sessão expirou. Faça login novamente.",
+            "button": "Fazer login"
+          },
+          "forbidden": {
+            "title": "Acesso negado",
+            "message": "Você não tem permissão para realizar esta ação.",
+            "button": "Voltar"
+          },
+          "notFound": {
+            "title": "Não encontrado",
+            "message": "O recurso solicitado não foi encontrado.",
+            "button": "Voltar"
+          },
+          "validationError": {
+            "title": "Erro de validação",
+            "message": "Os dados fornecidos não passaram na validação.",
+            "button": "Corrigir"
+          },
+          "internalError": {
+            "title": "Erro interno",
+            "message": "Ocorreu um erro no servidor. Tente novamente mais tarde.",
+            "button": "Tentar novamente"
+          },
+          "badGateway": {
+            "title": "Serviço indisponível",
+            "message": "O serviço está temporariamente indisponível. Tente novamente em instantes.",
+            "button": "Tentar novamente"
+          },
+          "serviceUnavailable": {
+            "title": "Serviço fora do ar",
+            "message": "O serviço está em manutenção. Tente novamente mais tarde.",
+            "button": "Entendi"
+          }
+        },
+        "steps": {
+          "eventCondition": {
+            "loadError": {
+              "title": "Erro ao carregar condições",
+              "message": "Não foi possível carregar as condições do evento.",
+              "button": "Tentar novamente"
+            },
+            "acceptError": {
+              "title": "Erro ao aceitar condições",
+              "message": "Não foi possível registrar a aceitação das condições.",
+              "button": "Tentar novamente"
+            }
+          },
+          "tokenValidation": {
+            "sendError": {
+              "title": "Erro ao enviar código",
+              "message": "Não foi possível enviar o código de validação.",
+              "button": "Tentar novamente"
+            },
+            "confirmError": {
+              "title": "Erro ao confirmar código",
+              "message": "Não foi possível confirmar o código digitado.",
+              "button": "Tentar novamente"
+            }
+          },
+          "groupOffers": {
+            "loadError": {
+              "title": "Erro ao carregar ofertas",
+              "message": "Não foi possível carregar as ofertas do leilão.",
+              "button": "Tentar novamente"
+            },
+            "viewError": {
+              "title": "Erro ao visualizar ofertas",
+              "message": "Não foi possível registrar a visualização das ofertas.",
+              "button": "Tentar novamente"
+            }
+          },
+          "documents": {
+            "uploadError": {
+              "title": "Erro no upload",
+              "message": "Não foi possível fazer upload do documento.",
+              "button": "Tentar novamente"
+            },
+            "deleteError": {
+              "title": "Erro ao excluir",
+              "message": "Não foi possível excluir o documento.",
+              "button": "Tentar novamente"
+            },
+            "submitError": {
+              "title": "Erro ao enviar documentos",
+              "message": "Não foi possível enviar os documentos selecionados.",
+              "button": "Tentar novamente"
+            }
+          },
+          "payment": {
+            "createError": {
+              "title": "Erro ao criar pagamento",
+              "message": "Não foi possível criar a ordem de pagamento.",
+              "button": "Tentar novamente"
+            },
+            "processError": {
+              "title": "Erro ao processar pagamento",
+              "message": "Não foi possível processar o pagamento.",
+              "button": "Tentar novamente"
+            },
+            "confirmError": {
+              "title": "Erro na confirmação",
+              "message": "Não foi possível confirmar o pagamento.",
+              "button": "Tentar novamente"
+            }
+          },
+          "phoneChange": {
+            "updateError": {
+              "title": "Erro ao atualizar telefone",
+              "message": "Não foi possível atualizar seu número de telefone.",
+              "button": "Tentar novamente"
+            }
+          },
+          "validation": {
+            "finalError": {
+              "title": "Erro na validação final",
+              "message": "Não foi possível completar a validação final da habilitação.",
+              "button": "Tentar novamente"
+            }
+          }
+        }
+      },
+      "eventConditions": {
+        "title": "Condições do evento",
+        "agreementLabel": "Concordo com as responsabilidades e disposições previstas nestas condições de venda e pagamento.",
+        "whatsappNotificationsLabel": "Desejo receber notificações sobre meus eventos pelo WhatsApp.",
+        "learnMore": "Saiba mais.",
+        "submit": "Avançar",
+        "noContent": "Nenhum conteúdo disponível para visualização.",
+        "noContentTitle": "Condições do evento indisponíveis",
+        "noContentMessage": "Tente novamente mais tarde",
+        "checkboxes": {
+          "CHECK_CVP": "Aceito as condições de venda e pagamento.",
+          "CHECK_GRANT_POWERS": "Aceito os termos de outorga de poderes."
+        }
+      },
+      "summary": {
+        "title": "Resumo da Habilitação",
+        "description": "Sua habilitação foi processada com sucesso. Agora você pode participar das ofertas disponíveis.",
+        "success": "Habilitação concluída com sucesso!",
+        "submit": "Finalizar"
+      },
+      "phoneChange": {
+        "title": "Alteração de telefone",
+        "description": "Seu número atual é %{phone}. Insira o seu novo número de telefone.",
+        "placeholder": "Seu novo número de telefone",
+        "confirmButton": "Confirmar telefone",
+        "successDescription": "Confirmação de atualização do seu número de telefone.",
+        "success": "Seu telefone foi atualizado com sucesso",
+        "sendCodeButton": "Enviar código por WhatsApp",
+        "whatsappProblems": "Problemas com WhatsApp?",
+        "alternativeMethod": "Tente enviar o código por e-mail",
+        "errors": {
+          "required": "Por favor, insira um número de telefone",
+          "invalid": "O número que você inseriu é inválido",
+          "alreadyExists": "O número que você inseriu já existe em nossa base. Insira outro número.",
+          "updateFailed": "Não foi possível atualizar o telefone"
+        }
+      },
+      "offers": {
+        "info": "Visualize as ofertas disponíveis para este leilão.",
+        "eventTitle": "Compartilhado Embu - 09h. Evaporadora Cassete Hitachi Frio, Mesa de Jantar, Cadeiras, Televisores e Outros",
+        "requirement": "Esse evento exige o pagamento de encargos de habilitação para participação online.",
+        "groupsTitle": "Grupos de oferta",
+        "groupsInfoPrefix": "As ofertas desse evento estão divididas em %{count} grupo(s). Algumas ofertas são restritas a Pessoas Jurídicas de São Paulo e outras exigem o envio de documentos.",
+        "groupsInfoSuffix": "Esse evento exige o pagamento de encargos de habilitação para participação online.",
+        "consultTerms": "Em caso de dúvidas, consulte o",
+        "groupsDescription": "Alguns grupos são exclusivos para Pessoas Jurídicas de SP e/ou exigem envio de documentos. Em caso de dúvidas, consulte o",
+        "termsLink": "Edital/Condições de Venda e Pagamento",
+        "submit": "Avançar",
+        "loading": "Carregando ofertas...",
+        "loadingDetails": "Carregando detalhes das ofertas...",
+        "errorLoadingDetails": "Erro ao carregar detalhes das ofertas",
+        "totalOffers": "%{count} ofertas disponíveis",
+        "noOffers": "Nenhuma oferta disponível para este leilão.",
+        "restrictions": "Restrições",
+        "offerId": "ID da Oferta",
+        "guarantee": "Caução",
+        "guaranteeRequired": "R$ %{value}",
+        "guaranteeNotRequired": "Não exigida",
+        "guaranteePendingPayment": "Aguardando pagamento",
+        "payGuarantee": "Pagar caução",
+        "depositGuarantee": "Depositar caução",
+        "depositValue": "Valor caução: %{value}",
+        "seeOffers": "Ver ofertas",
+        "offerInfo": "Abertas para participação",
+        "restrictionRequirement": "Exige: %{documents}",
+        "restrictionTypes": {
+          "byFiscalDocument": "Documentos fiscais específicos",
+          "byEntityType": "Tipo de pessoa/entidade (PF/PJ)",
+          "byLocation": "Localização (estado e/ou país)",
+          "byBusinessActivityCnae": "Atividade econômica (CNAE)",
+          "byAcceptanceTerm": "Aceite de termo",
+          "byDocumentsAfterEvent": "Envio de documentos após o evento",
+          "byGuaranteeDeposit": "Caução",
+          "byGuaranteeDepositWithValue": "Exige reserva de caução no valor de R$ %{value}",
+          "byOthers": "Outras restrições"
+        },
+        "status": {
+          "restrictedRelease": "Liberação Restrita",
+          "permitted": "Permitida",
+          "restricted": "Restrito",
+          "blocked": "Bloqueado",
+          "approved": "Permitida",
+          "pendingDocuments": "Documentos Pendentes",
+          "waitingApproval": "Aguardando aprovação manual",
+          "pendingGuarantee": "Pendente de caução",
+          "unknown": "Desconhecido"
+        }
+      },
+      "validation": {
+        "title": "Por segurança, confirme sua identidade",
+        "descriptionEmail": "Um código foi enviado para o e-mail %{contact}",
+        "descriptionWhatsapp": "Um código foi enviado para o WhatsApp %{phone}",
+        "changeContact": "(não tenho mais esse número)",
+        "inputLabel": "Insira o código recebido abaixo:",
+        "confirmButton": "Confirmar",
+        "resendTimer": "Enviar novamente em %{seconds}s",
+        "resendCode": "Reenviar código",
+        "problemsEmail": "Problemas com e-mail?",
+        "problemsWhatsapp": "Problemas com WhatsApp?",
+        "alternativeEmail": "Tente enviar o código por e-mail",
+        "alternativeWhatsapp": "Tente enviar o código por WhatsApp",
+        "errors": {
+          "invalidLength": "Código deve ter 6 dígitos",
+          "invalid": "Código inválido",
+          "expired": "Código expirado. Solicite um novo código."
+        }
+      }
+    },
+    "categories": {
+      "searchPlaceholder": "Buscar nesta categoria",
+      "sort": {
+        "lotNumber": "Número do Lote",
+        "relevance": "Relevância",
+        "highestPrice": "Maior valor",
+        "lowestPrice": "Menor valor",
+        "mostVisited": "Mais visitados",
+        "endDate": "Data de encerramento"
+      }
+    },
+    "groupOfferResultStatus": {
+      "active": "Habilitado",
+      "waitingAcceptance": "Aguardando aceite",
+      "noInterest": "Sem interesse",
+      "blocked": "Bloqueado",
+      "restrictedRelease": "Aguardando validação",
+      "pendingDocuments": "Pendente de documentos"
+    },
+    "groupOfferListStatus": {
+      "approved": "Permitida",
+      "blocked": "Bloqueada",
+      "waitingManualApproval": "Aguardando aprovação manual",
+      "pendingDocuments": "Pendente de documentos"
+    }
+  },
+  "facialRecognition": {
+    "facialRecognition": {
+      "title": "Para garantir a segurança de sua conta e seus dados, precisamos que você faça o reconhecimento facial.",
+      "description": "A confirmação de identidade deve ser feita pelo titular do CPF cadastrado."
+    },
+    "validationData": {
+      "title": "Validando seus dados...",
+      "description": "Isso pode levar alguns segundos. Aguarde."
+    },
+    "accountCreated": {
+      "title": "Conta criada!",
+      "description": "A sua Conta sbXPAY foi criada com sucesso",
+      "enterAccount": "Entrar na sua conta"
+    },
+    "accountNotCreated": {
+      "title": "Liberação em andamento!",
+      "description": "A sua conta de pagamento sbXPAY está sendo criada.",
+      "helperText": "Te avisaremos por Whatsapp assim que sua conta for liberada."
+    }
+  },
+  "GROUP_OFFERS_VIEW": {
+    "INTRO": "As ofertas desse evento estão divididas em %{count} grupo(s).",
+    "PJ_RESTRICTION": "restritas a Pessoas Jurídicas",
+    "LOCATION_RESTRICTION": "ao(s) estado(s) de %{states}",
+    "DOCS_REQUIRED": "outras exigem o envio de documentos",
+    "DOCS_REQUIRED_2": "Envio de documentos",
+    "RESTRICTIONS_INTRO": "Algumas ofertas possuem restrições, como:",
+    "FEES_REQUIRED": "Esse evento exige o pagamento de encargos de habilitação para participação online.",
+    "CONTACT_INFO": "Em caso de dúvidas, consulte o <editalLink>Edital/Condições de Venda e Pagamento.</editalLink>",
+    "CNAE_RESTRICTION": "restrito a atividades econômicas específicas (CNAE)",
+    "ACCEPTANCE_TERM_REQUIRED": "é necessário aceitar os termos de participação",
+    "POST_EVENT_DOCS_REQUIRED": "documentos adicionais serão exigidos após o evento",
+    "HABILITATED": "Permitida",
+    "BLOCKED": "Bloqueada",
+    "PEDING_DOCS": "Pendente de documentos",
+    "WAITING_MANUAL_APPROVAL": "Aguardando aprovação manual",
+    "AND": "e",
+    "SUBTITLE": "Confira abaixo como as ofertas estão organizadas:",
+    "VIEW_ON_SITE": "Ver no site",
+    "HIDE_OFFERS": "Ocultar ofertas",
+    "SHOW_OFFERS": "Exibir ofertas",
+    "DEPOSIT_GUARANTEE": "Depositar caução",
+    "GUARANTEE_PAID": "Pago",
+    "GUARANTEE_PENDING": "Não realizado",
+    "GUARANTEE_TOOLTIP": "Esse grupo requer o depósito de caução.",
+    "GUARANTEE_WAITING_PAYMENT": "Aguardando pagamento",
+    "GUARANTEE_WAITING_PAYMENT_DESCRIPTION": "Exige reserva de caução no valor de %{guaranteeValue}"
+  },
+  "terms": {
+    "termsOfUse": {
+      "title": "Termos de Uso",
+      "url": "https://s.superbid.net/politicas-institucionais/termos-de-uso-do-site.pdf"
+    },
+    "privacyPolicy": {
+      "title": "Aviso de Privacidade",
+      "url": "https://s.superbid.net/politicas-institucionais/aviso-de-privacidade.pdf"
+    }
+  },
+  "modal": {
+    "titles": {
+      "error": "Algo deu errado",
+      "success": "Sucesso!",
+      "warning": "Atenção",
+      "otpInvalid": "Código inválido ou expirado",
+      "phoneUpdate": "Quer atualizar seu número?"
+    },
+    "descriptions": {
+      "error": "Não foi possível concluir sua solicitação. Tente novamente mais tarde.",
+      "success": "Sua ação foi concluída com sucesso.",
+      "warning": "Atenção! Pode haver algo errado nas informações.",
+      "otpInvalid": "Verifique o código digitado ou solicite um novo para continuar.",
+      "phoneUpdate": "Pra continuar, vamos te levar para a jornada de alteração de telefone.\nTudo bem seguir?",
+      "paymentSuccess": "O pagamento foi confirmado com sucesso."
+    },
+    "buttons": {
+      "retry": "Tentar novamente",
+      "close": "Fechar",
+      "ok": "OK, Entendi",
+      "cancel": "Cancelar",
+      "yes": "Sim",
+      "no": "Não"
+    },
+    "home": {
+      "myPurchase": {
+        "title": "Histórico de compras",
+        "description": "Aqui você encontra todos os itens que já adquiriu, com acesso aos detalhes de cada compra."
+      }
+    },
+    "accountUnavailable": {
+      "title": "Conta indisponível no momento",
+      "description": "Entre em contato pelo e-mail cac@superbid.net ou pelo telefone (11) 4950-9400.",
+      "button": "Voltar"
+    }
+  },
+  "common": {
+    "uploading": "Carregando...",
+    "lotNumber": "Lote",
+    "unexpectedError": "Estamos trabalhando para resolver o problema. Tente novamente ou consulte a sessão de ajuda.",
+    "senhaJaExiste": "Não é possível reutilizar senhas anteriores.",
+    "continue": "Continuar",
+    "nextStep": "Próximo Passo",
+    "advance": "Avançar",
+    "knowMore": "Saiba mais",
+    "save": "Salvar",
+    "back": "Voltar",
+    "takePhotoOr": "Tire uma foto ou",
+    "selectPhotoOrDocument": "selecione uma foto ou documento",
+    "fileFormatLimit": "Formatos de arquivo JPG, JPEG, PNG ou PDF com no máximo 5MB",
+    "fileFormatLimit50MB": "Formatos de arquivo JPG, JPEG, PNG ou PDF com no máximo 50MB",
+    "finish": "Finalizar",
+    "modalTitle": "Título do Modal",
+    "modalDescription": "Esta é uma descrição de exemplo para o modal. O modal está funcionando corretamente!",
+    "modalButtonText": "Fechar",
+    "logout": "Sair",
+    "cpfPlaceholder": "000.000.000-00",
+    "cnpjPlaceholder": "000.000.000/0000-00",
+    "phoneNumberPlaceholder": "(99) 99999-9999",
+    "single": "Solteiro(a)",
+    "married": "Casado(a)",
+    "stableUnion": "União estável",
+    "divorced": "Divorciado(a)",
+    "widowed": "Viúvo(a)",
+    "free": "Isento",
+    "rg": "RG",
+    "cnh": "CNH",
+    "tryAgain": "Tentar novamente",
+    "others": "Outros",
+    "exit": "Sair",
+    "doItLater": "Fazer depois",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "ok": "OK",
+    "loading": "Carregando...",
+    "genericConfirmation": {
+      "title": "Alteração confirmada",
+      "description": "Sua alteração foi realizada com sucesso.",
+      "button": "Continuar",
+      "modalButton": "Ok, entendi"
+    },
+    "allowed": "Permitida",
+    "restricted": "Restrito",
+    "all": "Todos",
+    "allQualifications": "Todas",
+    "payAfter": "Pagar depois",
+    "pay": "Pagar",
+    "cpf": "CPF",
+    "country": "País",
+    "time": {
+      "days": "dias",
+      "hours": "hrs",
+      "minutes": "min",
+      "seconds": "seg"
+    }
+  },
+  "validations": {
+    "passwordSchema": {
+      "min8": "Mínimo de 8 caracteres.",
+      "lower": "Inclua pelo menos 1 letra minúscula.",
+      "upper": "Inclua pelo menos 1 letra maiúscula.",
+      "number": "Inclua pelo menos 1 número.",
+      "special": "Inclua pelo menos 1 caractere especial.",
+      "sequential": "Evite sequências numéricas (ex.: 123)."
+    },
+    "required": "Campo obrigatório",
+    "cpf": "Digite um CPF válido",
+    "phoneNumber": "Digite um telefone válido",
+    "email": "Digite um e-mail válido",
+    "password": "Senha deve ter pelo menos 8 caracteres",
+    "passwordMinLength": "Senha deve ter pelo menos 6 caracteres",
+    "confirmPassword": "As senhas devem ser iguais",
+    "cnpj": "Digite um CNPJ válido",
+    "date": "Digite uma data válida",
+    "underage": "Você precisa ser maior de 18 anos",
+    "emailAlreadyRegistered": "Email já cadastrado",
+    "zipCode": "Digite um CEP válido",
+    "phoneNumberOtp": "Digite um código de 6 dígitos",
+    "emailOtp": "Digite um código de 6 dígitos",
+    "rgOrCnhExpirationDate": "A validade deve ser igual ou posterior à emissão",
+    "rgOrCnhFutureExpirationDate": "A data de validade informada já expirou. Por favor, insira um documento com vencimento futuro.",
+    "login": "O nome de usuário deve ter no máximo 10 caracteres",
+    "loginMin": "O nome de usuário deve ter no mínimo 6 caracteres",
+    "fullName": "Digite um nome válido",
+    "fullNameAsDocument": "Esse dado é importante para validação de segurança. Então preencha exatamente como aparece em seu documento.",
+    "emailsMustBeDifferent": "Os e-mails devem ser diferentes",
+    "phonesMustMatch": "Os telefones devem ser iguais",
+    "phonesMustBeDifferent": "Os telefones devem ser diferentes",
+    "emailsMustMatch": "Os e-mails devem ser iguais",
+    "emailMustBeDifferentFromCurrent": "O novo email deve ser diferente do email atual"
+  },
+  "http": {
+    "token_not_send": "Não foi possível enviar o código de verificação. Tente novamente mais tarde.",
+    "invalid_otp_token": "Código de autenticação inválido",
+    "acceptance_term_not_valid": "Termos de uso inválidos",
+    "acceptance_term_id_update_not_allowed": "Não é permitido atualizar os termos de aceite",
+    "companyinfo_required": "Dados da empresa são obrigatórios",
+    "companyinfo_fantasyname_required": "Nome fantasia é obrigatório",
+    "company_info_update_not_allowed": "Não é permitido atualizar os dados da empresa",
+    "responsible_id_update_not_allowed": "Não é permitido atualizar o responsável",
+    "credentials_login_update_not_allowed": "Não é permitido atualizar o login",
+    "credentials_password_update_not_allowed": "Não é permitido atualizar a senha",
+    "documents_required": "Documentos obrigatórios",
+    "invalid_document": "Documento inválido",
+    "invalid_document_type": "Tipo de documento inválido",
+    "document_already_exists": "Documento já cadastrado",
+    "document_number_update_not_allowed": "Não é permitido atualizar o número do documento",
+    "repeated_document": "Documento duplicado",
+    "ie_invalid": "Inscrição Estadual inválida",
+    "im_invalid": "Inscrição Municipal inválida",
+    "addresses_required": "É preciso informar seus endereços",
+    "address_required": "O endereço deve ser informado",
+    "repeated_address": "Endereço duplicado",
+    "invalid_address_type": "Tipo de endereço inválido",
+    "new_address_not_allowed": "Não é permitido adicionar novo endereço",
+    "phones_required": "Telefones obrigatórios",
+    "invalid_phone_type": "Tipo de telefone inválido",
+    "phone_type_update_not_allowed": "Não é permitido atualizar o tipo de telefone",
+    "new_phone_not_allowed": "Não é permitido adicionar novo telefone",
+    "repeated_phone": "Telefone duplicado",
+    "portal_id_update_not_allowed": "Não é permitido atualizar o portal",
+    "version_update_not_allowed": "Não é permitido atualizar a versão",
+    "type_update_not_allowed": "Não é permitido atualizar o tipo",
+    "validation.email.alreadyexists": "Já existe uma conta com este e-mail",
+    "login_already_exists": "O login já foi cadastrado",
+    "cpf_already_exists": "CPF já cadastrado na base, favor contatar o Atendimento",
+    "cnpj_already_exists": "Este CNPJ já foi utilizado em outro cadastro",
+    "email_already_exists": "O e-mail já foi cadastrado",
+    "phone_already_exists": "Celular já registrado",
+    "generate_confirm_token_limit_exceeded": "Você atingiu o limite de solicitações de código. Tente novamente mais tarde",
+    "expired_otp_token": "O código de verificação expirou"
+  },
+  "signIn": {
+    "title": "Entrar",
+    "CPFPlaceholder": "CPF, e-mail ou nome de usuário",
+    "CNPJPlaceholder": "CNPJ ou login",
+    "passwordPlaceholder": "Senha",
+    "rememberLogin": "Lembrar login",
+    "loginButton": "Entrar",
+    "forgotPassword": "Esqueci minha senha?",
+    "noAccount": "Ainda não tem uma conta?",
+    "createAccount": "Criar conta",
+    "loginWithBiometrics": "Entrar com biometria",
+    "personType": {
+      "physical": "Pessoa Física",
+      "legal": "Pessoa Jurídica"
+    },
+    "errors": {
+      "requiredField": "Campo obrigatório",
+      "invalidFormat": "Formato inválido",
+      "passwordRequired": "Senha é obrigatória",
+      "passwordMinLength": "Senha deve ter pelo menos 6 caracteres",
+      "invalidCredentials": "Usuário ou senha inválidos",
+      "helpLink": "https://exchange.stage.superbid.net/ajuda",
+      "inactiveUser": "Este usuário encontra-se bloqueado no sistema. Por favor, entre em contato com nossa central de relacionamento.",
+      "emailNotConfirmed": "Por favor, confirme seu e-mail %{email} antes de fazer login."
+    },
+    "modals": {
+      "documentsWaitingValidation": {
+        "title": "Documentos em análise",
+        "description": "Sua documentação foi enviada com sucesso e está em análise. Assim que a validação for concluída, você poderá continuar o acesso normalmente.",
+        "buttonText": "Entendi"
+      },
+      "documentsDisapproved": {
+        "title": "Validação em andamento",
+        "description": "Ainda estamos validando a sua documentação, aguarde mais algumas horas.",
+        "buttonText": "Entendi"
+      }
+    }
+  },
+  "forgotPassword": {
+    "title": "Recuperação de senha.",
+    "description": "Recupere a sua senha de acesso.",
+    "cpfTitle": "Qual o seu CPF ou CNPJ?",
+    "cpfDescription": "Precisamos dele para recuperar a sua senha.",
+    "cpfOrCnpjPlaceholder": "Informe CPF ou CNPJ",
+    "confirmIdentity": {
+      "title": "Por segurança, confirme sua identidade",
+      "notMyNumber": "não tenho mais esse número"
+    },
+    "facialRecognition": {
+      "title": "Para garantir a segurança de sua conta e seus dados, precisamos que você faça o reconhecimento facial.",
+      "description": "A confirmação de identidade deve ser feita pelo titular do CPF cadastrado."
+    },
+    "confirmPhoneNumber": {
+      "description": "Um código foi enviado para o WhatsApp do número"
+    }
+  },
+  "notFaceChecked": {
+    "facialRecognition": {
+      "header": {
+        "title": "Segurança.",
+        "description": "Confirmação de identidade obrigatória."
+      },
+      "title": "Para garantir a segurança de seus dados e de sua conta, é necessário realizar a confirmação de telefone e de identidade."
+    },
+    "title": "Segurança. Confirmação de identidade obrigatória."
+  },
+  "changePassword": {
+    "title": "Alteração de senha.",
+    "currentPassword": "Senha atual",
+    "description": "Gerencie a sua senha de acesso.",
+    "newPassword": "Nova senha",
+    "confirmNewPassword": "Confirmar nova senha",
+    "passwordProtection": "Proteja sua senha utilizando:",
+    "validations": {
+      "specialChars": "Caracteres especiais",
+      "uppercase": "Letras maiúsculas",
+      "numbers": "Números",
+      "lowercase": "Letras minúsculas",
+      "minLength": "Mínimo 8 caracteres"
+    },
+    "consent": {
+      "before": "Li, estou ciente das condições de tratamento dos meus dados pessoais e dou meu consentimento, quando aplicável, conforme descrito nos ",
+      "link": "Termos e Políticas.",
+      "after": ""
+    }
+  },
+  "home": {
+    "header": {
+      "FAQInfoUrl": "https://ajuda.superbid.net/support/solutions"
+    },
+    "biometric_modal": {
+      "title": "Ativar biometria do celular para entrar no aplicativo?",
+      "desc": "Com a biometria você vai acessar seu aplicativo de forma mais rápida e prática.",
+      "button_yes": "Ativar",
+      "button_no": "Deixar para depois",
+      "button_never_ask": "Não perguntar novamente"
+    },
+    "bids": {
+      "ending_soon": "Terminando em breve",
+      "qualification": "Habilitações",
+      "end_date": "Encerramento:",
+      "visitation_available": "Visitação disponível",
+      "activeStatus": "Habilitado",
+      "status": {
+        "active": "Habilitado",
+        "waitingapproval": "Aguardando aceite",
+        "aguardandoaceite": "Aguardando aceite",
+        "ativo": "Habilitado",
+        "pending": "Pendente",
+        "pendente": "Pendente",
+        "analyzing": "Em análise",
+        "emanalise": "Em análise",
+        "unknown": "Status: %{value}",
+        "hasPendencies": "Habilitação com pendências"
+      },
+      "empty": "Você ainda não tem habilitações"
+    },
+    "qualificated_list": {
+      "title": "Habilitações.",
+      "secondTitle": "Veja seu histórico e acompanhe suas habilitações.",
+      "seeDetails": "Ver detalhes",
+      "continueHabilitation": "Continuar habilitação",
+      "notQualified": "Você não se habilitou em nenhum evento.",
+      "guaranteePending": "Encargos",
+      "guaranteePaid": "Pago",
+      "payGuarantee": "Pagar encargos",
+      "incomplete": "Incompleto"
+    },
+    "qualification_details": {
+      "title": "Habilitação.",
+      "secondTitle": "Confira o status e mais informações da sua habilitação.",
+      "seeDetails": "Ver detalhes",
+      "notQualified": "Você não se habilitou em nenhum evento.",
+      "chargePaid": "Pago",
+      "chargePending": "Encargo a pagar",
+      "chargeLabel": "Encargo de %{type} %{amount}"
+    },
+    "qualification_documents": {
+      "title": "Documentos.",
+      "secondTitle": "Envie ou revise seus documentos."
+    },
+    "favorites": {
+      "title": "Meus favoritos",
+      "lot_number": "Número do lote:",
+      "sub_title": "Aqui estão os itens que você marcou como favoritos.",
+      "empty": "Você ainda não adicionou nenhuma oferta aos favoritos"
+    },
+    "participating": {
+      "title": "Participando",
+      "lot_number": "Número do lote:",
+      "bid_label": "Lance",
+      "proposal_label": "Proposta",
+      "sub_title": "Acompanhe as ofertas em que você está participando.",
+      "status": {
+        "analysis": "Proposta enviada (em análise)",
+        "outbid": "Lance superado",
+        "winning_bid": "Vencendo (maior lance)",
+        "winning_proposal": "Vencendo (maior proposta)",
+        "current_winner": "Vencendo (maior proposta)",
+        "counter_proposal_received": "Contraproposta recebida",
+        "counter_proposal_sent": "Contraproposta enviada",
+        "winning": "Vencendo (maior proposta)",
+        "losing": "Perdendo"
+      },
+      "filters": {
+        "bids": {
+          "all": "Todos",
+          "outbid": "Lance superado",
+          "winning": "Vencendo"
+        },
+        "proposals": {
+          "all": "Todos",
+          "search": {
+            "offer_code_label": "Código de oferta",
+            "offer_code_placeholder": "Digite o código",
+            "product_name_label": "Nome do produto",
+            "product_name_placeholder": "Digite o nome",
+            "clear": "Limpar",
+            "search": "Buscar"
+          },
+          "sent": "Proposta enviada",
+          "outbid": "Proposta superada",
+          "winning": "Vencendo",
+          "counter_received": "Contraproposta recebida",
+          "counter_sent": "Contraproposta enviada"
+        }
+      },
+      "tabs": {
+        "bids": "Lances",
+        "proposals": "Propostas"
+      },
+      "empty": "Nenhum item encontrado"
+    },
+    "my_purchase": {
+      "title": "Histórico de compras",
+      "lot_number": "Número do lote:",
+      "subTotal": "Subtotal:",
+      "purchaseTitle": "Compras",
+      "purchaseSubtitle": "Confira os status e informações das suas compras.",
+      "historyTitle": "Histórico",
+      "historySubtitle": "Confira seu histórico de compras.",
+      "status": {
+        "paid": "Pago",
+        "pending": "Pendente",
+        "cancelled": "Cancelado"
+      },
+      "history_details": {
+        "title": "Compra. ",
+        "subTitle": "Confira os status e informações das suas compras.",
+        "expiredText": "Encerrado em: ",
+        "notExpiredText": "Termina em: ",
+        "buttonText": "Baixar recibo de venda para retirada"
+      },
+      "empty": "Você ainda não tem compras"
+    },
+    "wallet": {
+      "balanceAvailable": "Saldo disponível Superbid Pay",
+      "extract": "Extrato",
+      "deposit": "Depositar",
+      "transfer": "Transferir",
+      "addCard": "Adicionar cartão",
+      "addAccount": "Adicionar conta",
+      "smallCards": {
+        "habilitations": "Habilitações",
+        "participating": "Participando",
+        "visits": "Visitas",
+        "cart": "Carrinho",
+        "purchases": "Compras",
+        "history": "Histórico",
+        "pay": "Pay",
+        "profile": "Perfil"
+      },
+      "extractScreen": {
+        "tabs": {
+          "extract": "Extrato",
+          "cardsAndAccounts": "Cartões e Contas"
+        },
+        "search": {
+          "placeholder": "Descrição, nome ou documento",
+          "noResults": "Nenhum resultado para \"%{query}\""
+        },
+        "sections": {
+          "cards": "Cartões",
+          "accounts": "Contas"
+        },
+        "empty": {
+          "transactions": "Nenhuma transação encontrada",
+          "cards": "Nenhum cartão cadastrado",
+          "accounts": "Nenhuma conta cadastrada"
+        },
+        "errors": {
+          "loadExtract": "Erro ao carregar extrato",
+          "loadCards": "Erro ao carregar cartões",
+          "loadAccounts": "Erro ao carregar contas"
+        }
+      },
+      "deleteCard": {
+        "title": "Excluir cartão",
+        "description": "Tem certeza que deseja excluir o cartão %{brand} com final %{lastDigits}?",
+        "warning": "Esta ação não pode ser desfeita.",
+        "deleting": "Excluindo...",
+        "delete": "Excluir"
+      },
+      "deleteBankAccount": {
+        "title": "Excluir conta",
+        "description": "Tem certeza que deseja excluir a conta %{bank} %{accountNumber}?",
+        "warning": "Esta ação não pode ser desfeita.",
+        "blockMessage": "Contas com status \"Aguardando validação da conta\" não podem ser excluídas.",
+        "deleting": "Excluindo...",
+        "delete": "Excluir"
+      },
+      "deleteBankAccountSuccess": {
+        "title": "Conta excluída com sucesso",
+        "close": "Fechar"
+      },
+      "bankAccountItem": {
+        "agency": "Agência:",
+        "checkingAccount": "Conta corrente:"
+      },
+      "dateRangePicker": {
+        "title": "Definir período",
+        "description": "Informe o período para filtrar o extrato",
+        "startDate": "Data inicial",
+        "endDate": "Data final",
+        "filter": "Filtrar",
+        "close": "Fechar",
+        "errors": {
+          "invalidFormat": "Por favor, preencha as datas no formato DD/MM/AAAA",
+          "invalidDate": "Data inválida",
+          "startAfterEnd": "A data inicial deve ser anterior à data final"
+        }
+      },
+      "extractFilter": {
+        "mostRecent": "Mais recentes...",
+        "oldest": "Mais antigos...",
+        "customDate": "Definir data"
+      }
+    }
+  },
+  "qrCode": {
+    "title": "QR Code",
+    "description": "Escaneie o QR Code das ofertas no site do BidTV ou em eventos presenciais. Aponte sua câmera para o QR Code e você será redirecionado para fora do app.",
+    "close": "Fechar",
+    "openCamera": "Abrir câmera",
+    "flash": {
+      "turnOn": "Ligar flash",
+      "turnOff": "Desligar flash"
+    },
+    "permissionRequired": {
+      "title": "Permissão necessária",
+      "description": "A permissão da câmera foi negada. Para usar o scanner de QR Code, você precisa habilitar a permissão nas configurações do app.",
+      "openSettings": "Abrir configurações",
+      "cancel": "Cancelar"
+    },
+    "scanned": {
+      "title": "QR Code escaneado",
+      "description": "Você será redirecionado para o link em instantes...",
+      "ok": "OK"
+    },
+    "invalid": {
+      "title": "QR Code inválido",
+      "description": "O QR Code escaneado não contém uma URL válida do domínio superbid.net.\n\nConteúdo: %{content}",
+      "tryAgain": "Tentar novamente"
+    },
+    "error": {
+      "openLink": {
+        "title": "Erro",
+        "description": "Não foi possível abrir este link. Verifique se a URL é válida.",
+        "ok": "OK"
+      },
+      "processing": {
+        "title": "Erro",
+        "description": "Ocorreu um erro ao processar o QR Code. Tente novamente.",
+        "ok": "OK"
+      }
+    }
+  },
+  "cart": {
+    "title": "Carrinho de compras.",
+    "subtitle": "Revise os itens e prossiga com o pagamento das suas compras.",
+    "emptyState": "Seu carrinho de compras está vazio.",
+    "platformFee": "Fee plataforma",
+    "quantity": "Quantidade",
+    "unitsAvailable": "unidades disponíveis",
+    "remove": "Excluir",
+    "subtotal": "Subtotal",
+    "selectedItems": "itens selecionados",
+    "seller": "Vendedor",
+    "location": "Local",
+    "eventWithLot": "Evento %{eventId} | %{lotNumber}",
+    "expirationWithDate": "Vencimento: %{date}",
+    "noExpirationDate": "-",
+    "availableQuantity": "unidades disponíveis",
+    "howPay": {
+      "title": "Como você quer pagar?",
+      "subtitle": "Escolha uma das opções abaixo para continuar com o pagamento."
+    },
+    "expandableSubtotal": {
+      "purchaseDetails": "Detalhes da compra",
+      "totalSelectedItems": "Total de itens selecionados",
+      "auctioneerCommission": "COMISSÃO DO LEILOEIRO",
+      "total": "TOTAL",
+      "cashPayment": "à vista",
+      "availablePaymentMethods": "Formas de pagamento disponíveis",
+      "unavailableForPurchase": "Indisponíveis para esta compra",
+      "closeOrder": "Fechar pedido",
+      "creatingOrder": "Criando pedido...",
+      "continueToCheckout": "Continuar para pagamento"
+    },
+    "orderProcessing": {
+      "processingTitle": "Processando seu pedido",
+      "processingSubtitle": "Por favor, aguarde enquanto processamos seu pedido",
+      "retryTitle": "Não foi possível processar o pedido",
+      "retryDescription": "O processamento está demorando mais que o esperado."
+    },
+    "errorLoading": "Erro ao carregar carrinho",
+    "pixPayment": {
+      "title": "Pagamento via PIX",
+      "subtitle": "Escaneie o QR Code com o app do seu banco para realizar o pagamento",
+      "copyCode": "Copiar código PIX",
+      "copied": "Copiado!",
+      "totalAmount": "Valor total",
+      "expirationDate": "Data de vencimento",
+      "paymentDetails": "Detalhes do pagamento",
+      "info": "Após o pagamento, o status será atualizado automaticamente. Você receberá uma confirmação quando o pagamento for aprovado.",
+      "back": "Voltar",
+      "changeMethod": "Alterar método",
+      "loading": "Carregando QR Code...",
+      "checkPaymentText": "Já realizou o pagamento e não foi confirmado?",
+      "clickHere": "Clique aqui",
+      "checkingStatus": "Verificando..."
+    },
+    "boletoPayment": {
+      "title": "Pagamento via Boleto",
+      "subtitle": "Pague o boleto até a data de vencimento em qualquer banco, lotérica ou aplicativo bancário",
+      "copyBarcode": "Copiar código de barras",
+      "copied": "Copiado!",
+      "instructions": "Instruções",
+      "info": "O boleto pode levar até 2 dias úteis para ser compensado após o pagamento. Você receberá uma confirmação quando o pagamento for aprovado."
+    },
+    "groupCard": {
+      "itemsCount": "%{count} itens",
+      "pickupInfo": "Para realizar a retirada dos itens descritos é necessário agendamento após o pagamento através do telefone ou e-mail a ser informado."
+    },
+    "group": {
+      "subtotal": "Subtotal",
+      "paymentOptions": "Formas de pagamento",
+      "available": "Disponíveis",
+      "unavailable": "Indisponíveis",
+      "methods": {
+        "digitalAccount": "Saldo da conta digital",
+        "creditCard": "Cartão de crédito",
+        "unavailableExample": "Lorem ipsum (indisponível)"
+      },
+      "creditCardLimitNote": "(limitado a R$ %{limit})",
+      "unavailableLorem": "Lorem ipsum dolor sit amet"
+    }
+  },
+  "enumPaymentItemType": {
+    "PAYMENT_LOT": "Pagamento do lote",
+    "COMMISSION_AUCTIONEER": "Comissão do leiloeiro",
+    "BUYERS_PREMIUM": "Buyers Premium",
+    "ADMINISTRATIVE_RATE": "Encargos de Administração",
+    "COMISSION_COMITENTE": "Comissão do Comitente",
+    "EDITAL_COMITENTE": "Edital do Comitente",
+    "ITEM_FIXED_VALUE1": "Valor Fixo 1",
+    "ITEM_FIXED_VALUE2": "Valor Fixo 2",
+    "ITEM_PERCENTAGE1": "Porcentagem 1",
+    "TRANSFER_SERVICES": "Serviços de Transferência",
+    "EXPORTATION": "Exportação",
+    "TRANSFER_REQUEST": "Solicitação de Transferência",
+    "TREASURE_TAX": "Imposto Tesouraria",
+    "CONDITIONAL": "Condicionados",
+    "TRANSPORTATION_SERVICES": "Serviços de Montacarga",
+    "WAREHOUSING": "Estadia",
+    "TRANSPORTATION": "Remoção",
+    "DECHARACTERIZATION": "Descaracterização",
+    "DEBITS_PENALTIES_TAXES": "Débitos (multa/IPVA)",
+    "DELIVERY": "Frete (entrega)",
+    "DOMAIN_INFORM": "Informe de Dominio",
+    "VERIFICATION_MANAGEMENT": "Verificacion y gestoria",
+    "MATERIAL_LOAD": "Carga de Materiales",
+    "FEE_PLATFORM": "Fee de Plataforma",
+    "COMMISSION": "Comissão",
+    "ICMS": "ICMS"
+  },
+  "checkout": {
+    "title": "Login",
+    "withSuperbidPay": "Com Superbid Pay",
+    "superbidPayAccount": "Conta digital Superbid Pay",
+    "availableBalance": "Saldo disponível",
+    "chooseOrAddCard": "Escolher ou adicionar outro cartão",
+    "installments": "Parcele em até 12x",
+    "installmentsLabel": "Parcelas",
+    "cvv": "CVV",
+    "pixMethod": "Via QR code ou Copia e Cola",
+    "otherMethods": "Outras formas",
+    "boletoCash": "Boleto à vista",
+    "approvedInDays": "Aprovado em até 2 dias úteis",
+    "continue": "Continuar",
+    "pay": "Pagar",
+    "processing": "Processando..."
+  },
+  "paymentConfirmation": {
+    "title": "Confirmação de pagamento.",
+    "subtitle": "Confira os detalhes do seu pagamento.",
+    "purchaseDetails": "Detalhes da compra",
+    "order": "Pedido",
+    "lotValue": "Valor do lote / item",
+    "auctioneerCommission": "Comissão do leiloeiro",
+    "buyersPremium": "Buyers premium",
+    "adminFees": "Encargos de administração",
+    "subtotal": "SUBTOTAL",
+    "paymentMethod": "Forma de pagamento",
+    "credit": "CRÉDITO",
+    "paymentFee": "Tarifa de meio de pagamento",
+    "total": "TOTAL",
+    "installments": "em %{count}x de %{value}",
+    "installment": "a prazo",
+    "confirmPayment": "Confirmar pagamento",
+    "itemsList": "Itens da compra"
+  },
+  "orderConfirmed": {
+    "title": "Detalhe do pedido.",
+    "subtitle": "Confira o status e mais informações sobre sua compra",
+    "order": "Pedido",
+    "date": "Data",
+    "orderPlaced": "Pedido realizado",
+    "paymentPending": "Pagamento pendente",
+    "paymentProcessed": "Pagamento efetuado",
+    "receiptAvailable": "Recibo de venda disponível",
+    "withdrawalConfirmed": "Retirada confirmada",
+    "completed": "Concluído",
+    "purchaseDetails": "Detalhes da compra",
+    "status": "STATUS",
+    "items": "ITENS",
+    "totalItems": "TOTAL DOS ITENS",
+    "buyersPremium": "BUYERS PREMIUM",
+    "auctioneerCommission": "COMISSÃO DO LEILOEIRO",
+    "adminFees": "ENCARGOS DE ADMINISTRAÇÃO",
+    "subtotal": "SUBTOTAL",
+    "cash": "à vista",
+    "paymentMethodLabel": "Forma de pagamento:",
+    "creditCard": "CARTÃO DE CRÉDITO",
+    "boleto": "Boleto",
+    "superbidPay": "Superbid Pay",
+    "notSpecified": "Não especificado",
+    "paymentFee": "TAXA DE PAGAMENTO COM CARTÃO DE CRÉDITO",
+    "total": "TOTAL",
+    "installments": "em %{count}x de %{value}",
+    "installment": "a prazo",
+    "quantity": "Quantidade",
+    "loading": "Carregando...",
+    "disclaimer": "Retirada de responsabilidade do comprador, para mais informações, acessar condições de venda e pagamento.",
+    "awaitingReceipt": "Aguardando recibo de venda",
+    "withdrawalInfo": "Informações sobre a retirada %{count} itens: %{lots}",
+    "withdrawalMessage": "As informações para agendamento e retirada estarão disponíveis em até XX dias úteis. Você será avisado(a) quando o seu pedido for atualizado.",
+    "seller": "Vendedor",
+    "backToCart": "Voltar para o carrinho"
+  },
+  "profile": {
+    "title": "Perfil",
+    "labels": {
+      "register": "Cadastro",
+      "documents": "Documentos",
+      "interestCategories": "Categorias de interesse",
+      "security": "Segurança",
+      "notifications": "Notificações",
+      "rateApp": "Avalie o aplicativo",
+      "closeAccount": "Encerrar conta"
+    },
+    "rateApp": {
+      "subtitle": "Sua avaliação na App Store ou Play Store nos ajuda a melhorar o aplicativo.",
+      "modalTitle": "Gostou do app?",
+      "modalDescription": "Sua avaliação na Play Store nos ajuda muito.",
+      "modalButton": "Avaliar na Play Store",
+      "modalClose": "Agora não"
+    },
+    "notifications": {
+      "title": "Notificações.",
+      "description": "Escolha as notificações que deseja receber no seu dispositivo.",
+      "toggleLabel": "Status de habilitações",
+      "toggleLabel2": "Status de ofertas",
+      "toggleLabel3": "Conclusão de compras",
+      "toggleLabel4": "Depósito efetuados",
+      "toggleLabel5": "Visitas agendadas",
+      "toggleLabel6": "Novos eventos",
+      "toggleLabel7": "Alertas de oportunidades",
+      "footerDescription": "Mesmo com as notificações desligadas, avisos essenciais sobre sua conta ainda serão enviados."
+    },
+    "closeAccount": {
+      "title": "Encerramento de Conta",
+      "attention": "Atenção",
+      "description": "Antes de encerrar sua conta, certifique-se de que não há:",
+      "balanceAvailable": "Saldo disponível",
+      "disputesInProgress": "Disputas em andamento",
+      "salesOrPendingPayments": "Vendas ou pedidos pendentes de pagamento",
+      "financialPending": "Pendências financeiras",
+      "button": "Encerrar Conta",
+      "buttonLoading": "Encerrando...",
+      "modal": {
+        "title": "Confirmar Encerramento da Conta",
+        "description": "Ao confirmar, sua conta será encerrada e você",
+        "highlightedText": "não poderá mais participar de eventos, realizar lances ou acessar o histórico de transações.",
+        "extraDescription": "Essa ação é permanente e não poderá ser desfeita.",
+        "confirmButton": "Confirmar encerramento de conta",
+        "cancelButton": "Cancelar"
+      },
+      "pending": {
+        "title": "Não foi possível encerrar sua conta",
+        "description": "Encontramos pendências que precisam ser resolvidas antes do encerramento da conta.\nMotivos:",
+        "balanceAvailable": "Saldo disponível",
+        "disputesInProgress": "Disputas em andamento",
+        "salesOrPendingPayments": "Vendas ou pedidos pendentes de pagamento",
+        "financialPending": "Pendências financeiras",
+        "backButton": "Voltar"
+      },
+      "success": {
+        "title": "Sua conta foi encerrada com sucesso.",
+        "description1": "Agradecemos por ter feito parte da Superbid.",
+        "description2": "Esperamos vê-lo novamente em breve.",
+        "closeButton": "Fechar"
+      },
+      "errors": {
+        "title": "Erro ao encerrar conta",
+        "generic": "Ocorreu um erro ao tentar encerrar sua conta. Tente novamente mais tarde.",
+        "closeButton": "Fechar",
+        "winningBids": "Você possui lances vencedores que precisam ser resolvidos antes do encerramento da conta.",
+        "activeProposals": "Você possui propostas ativas que precisam ser resolvidas antes do encerramento da conta.",
+        "pendingSales": "Você possui vendas pendentes que precisam ser resolvidas antes do encerramento da conta.",
+        "pendingOrders": "Você possui pedidos pendentes que precisam ser resolvidos antes do encerramento da conta.",
+        "financialPending": "Sua conta possui pendências financeiras que precisam ser resolvidas antes do encerramento.",
+        "availableBalance": "Não é possível encerrar a conta: Você possui saldo disponível",
+        "default": "Não é possível encerrar a conta. Verifique se há pendências em sua conta.",
+        "server": "Erro ao processar solicitação. Tente novamente mais tarde.",
+        "alreadyClosed": "Sua conta já foi encerrada ou cancelada.",
+        "pendingClosure": "Já existe uma solicitação de encerramento pendente para sua conta.",
+        "userNotFound": "Usuário não encontrado.",
+        "notAuthenticated": "Você precisa estar autenticado para encerrar sua conta."
+      }
+    },
+    "register": {
+      "title": "Cadastro.",
+      "subTitle": "Mantenha os seus dados atualizados.",
+      "personalDataInfo": "Algumas informações, como nome e documentos, não podem ser editadas.",
+      "personalDataTitle": "Cadastro de pessoa física",
+      "businessDataTitle": "Cadastro de pessoa jurídica",
+      "fullName": "Nome Completo",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "profession": "Profissão",
+      "birthDate": "Data de nascimento",
+      "gender": "Gênero",
+      "civilState": "Estado civil",
+      "cpf": "CPF",
+      "rg": "RG",
+      "motherName": "Nome da mãe completo",
+      "motherNameTitle": "Nome da mãe completo",
+      "isPubliclyExposedPerson": "Declaro que sou uma Pessoa Publicamente Exposta",
+      "genderOptions": {
+        "female": "Feminino",
+        "male": "Masculino",
+        "other": "Outro"
+      },
+      "civilStateOptions": {
+        "single": "Solteiro",
+        "married": "Casado",
+        "widowed": "Viúvo"
+      },
+      "saveChanges": "Salvar alterações",
+      "dataUpdatedSuccess": "Dados atualizados com sucesso!"
+    },
+    "documents": {
+      "title": "Documentos.",
+      "subTitle": "Mantenha os seus documentos atualizados.",
+      "addDocument": "Adicionar documento",
+      "validatedOn": "Validado em",
+      "pendingValidation": "Pendente de validação",
+      "notInformed": "Não informado",
+      "deleteModal": {
+        "title": "Excluir documento",
+        "description": "Tem certeza que deseja excluir este documento? Esta ação não pode ser desfeita.",
+        "confirmButton": "Excluir",
+        "cancelButton": "Cancelar"
+      },
+      "documentTypes": {
+        "cpf": "CPF",
+        "rg": "RG",
+        "cnpj": "CNPJ",
+        "passport": "Passaporte",
+        "driver_license": "CNH"
+      },
+      "mock": [
+        {
+          "title": "CNH",
+          "expireDate": "12/05/2025"
+        },
+        {
+          "title": "Comprovante de residência",
+          "expireDate": "28/04/2025"
+        }
+      ],
+      "modal": {
+        "title": "Adicionar documento",
+        "subTitle": "Selecione o tipo de documento que deseja cadastrar e preencha as informações",
+        "button": "Salvar documento",
+        "documentType": "Tipo de documento",
+        "uploadText": "Tire uma foto ou ",
+        "selectPicOrDocument": "selecione uma foto ou documento",
+        "removeSuccess": "Documento excluído com sucesso",
+        "addSuccess": "Documento cadastrado com sucesso"
+      }
+    },
+    "security": {
+      "title": "Segurança.",
+      "subTitle": "Gerencie as configurações de segurança da sua conta.",
+      "biometric": {
+        "loginWithBiometrics": "Login com biometria",
+        "notSupported": "Dispositivo sem suporte à biometria.",
+        "notEnrolled": "Biometria não cadastrada.",
+        "prompt": "Confirme sua identidade para ativar o login com biometria",
+        "disablePrompt": "Confirme sua identidade para desativar o login com biometria"
+      },
+      "options": {
+        "changePassword": "Alteração de senha",
+        "changeEmail": "Alteração de e-mail",
+        "changePhone": "Alteração de telefone",
+        "connectedDevices": "Dispositivos conectados",
+        "connectedDevicespage": "Dispositivos conectados.",
+        "connectedDevicesDescription": "Verifique e gerencie os seus dispositivos.",
+        "notRecognizeDevice": "Não reconhece esse dispositivo?",
+        "notRecognizeDeviceModal": {
+          "title": "Não reconhece este dispositivo?",
+          "titleStart": "Não reconhece",
+          "titleEnd": "este dispositivo?",
+          "description": "Ao remover este dispositivo, ele será desconectado da sua conta.",
+          "extraDescriptionStart": "Se você não",
+          "highlightedText1": "reconhece este login",
+          "extraDescriptionMiddle": ", recomendamos",
+          "highlightedText2": "alterar sua senha",
+          "extraDescriptionEnd": " para manter sua conta segura.",
+          "primaryLabel": "Altere sua senha",
+          "secondaryLabel": "Cancelar"
+        },
+        "deleteDeviceModal": {
+          "title": "Remover este dispositivo?",
+          "description": "Ao remover este dispositivo, ele será desconectado da sua conta.",
+          "extraDescriptionStart": "Se você não",
+          "highlightedText1": "reconhece este login",
+          "extraDescriptionMiddle": ", recomendamos",
+          "highlightedText2": "alterar sua senha",
+          "extraDescriptionEnd": " para manter sua conta segura.",
+          "primaryLabel": "Remover dispositivo",
+          "secondaryLabel": "Cancelar"
+        }
+      },
+      "changeEmail": {
+        "title": "Alteração de e-mail.",
+        "subtitle": "Gerencie o e-mail cadastrado.",
+        "description": "Digite o novo e-mail que deseja utilizar.",
+        "currentEmail": "E-mail",
+        "newEmail": "Novo e-mail",
+        "confirmNewEmail": "Confirmar novo e-mail",
+        "placeholder": "Novo e-mail",
+        "successMessage": "E-mail alterado com sucesso!",
+        "errorMessage": "Erro ao alterar e-mail. Tente novamente.",
+        "confirmation": {
+          "title": "Para garantir a segurança de sua conta e seus dados, precisamos que você faça o reconhecimento facial.",
+          "description": "A confirmação de identidade deve ser feita pelo titular do CPF cadastrado.",
+          "incorrectEmail": "este e-mail está incorreto",
+          "insertCode": "Insira o código recebido abaixo:",
+          "resendTimer": "Reenviar em",
+          "resendCode": "Reenviar código"
+        }
+      },
+      "changePhone": {
+        "title": "Alteração de telefone.",
+        "subtitle": "Gerencie o telefone cadastrado.",
+        "description": "Digite o novo telefone que deseja utilizar.",
+        "currentPhone": "Telefone atual",
+        "newPhone": "Novo telefone",
+        "confirmPhone": "Confirmar telefone",
+        "currentPassword": "Senha atual",
+        "placeholder": "Seu novo telefone",
+        "passwordPlaceholder": "Digite sua senha atual",
+        "successMessage": "Telefone alterado com sucesso!",
+        "confirmation": {
+          "title": "Confirmação de telefone",
+          "description": "Um código foi enviado para o WhatsApp do número %{phoneNumber}",
+          "incorrectNumber": "este número está incorreto",
+          "insertCode": "Insira o código recebido abaixo:",
+          "resendTimer": "Reenviar em",
+          "resendCode": "Reenviar código",
+          "whatsappIssues": "Problemas com WhatsApp?",
+          "sendBySms": "Enviar por SMS"
+        },
+        "errorMessage": "Erro ao alterar telefone. Tente novamente.",
+        "newPhoneDescription": "Seu número atual é {{phone}}. Insira o seu novo número de telefone."
+      },
+      "changePassword": {
+        "title": "Alteração de senha.",
+        "description": "Gerencie a sua senha de acesso.",
+        "currentPassword": "Senha atual",
+        "newPassword": "Nova senha",
+        "confirmation": {
+          "title": "Para garantir a segurança de sua conta e seus dados, precisamos que você faça o reconhecimento facial.",
+          "description": "A confirmação de identidade deve ser feita pelo titular do CPF cadastrado."
+        },
+        "confirmNewPassword": "Confirmar nova senha",
+        "consent": {
+          "before": "Li, estou ciente das condições de tratamento dos meus dados pessoais e dou meu consentimento, quando aplicável, conforme descrito nos ",
+          "link": "Termos de Uso",
+          "after": ""
+        },
+        "confirm": {
+          "title": "Alteração de senha.",
+          "description": "Gerencie a sua senha de acesso.",
+          "facialRecognition": {
+            "title": "Reconhecimento facial",
+            "description": "Para garantir a segurança de sua conta e seus dados, precisamos que você faça o reconhecimento facial. A confirmação de identidade deve ser feita pelo titular do CPF cadastrado."
+          }
+        }
+      },
+      "connectedDevices": {
+        "empty": "Você ainda não tem dispositivos conectados",
+        "status": {
+          "unknown": "Desconhecido",
+          "trusted": "Confiável",
+          "active": "Ativo",
+          "revoked": "Revogado"
+        }
+      }
+    },
+    "profileOptions": [
+      {
+        "icon": "person-outline",
+        "label": "Cadastro",
+        "route": "profile/register"
+      },
+      {
+        "icon": "file-outline",
+        "label": "Documentos",
+        "route": "profile/documents"
+      },
+      {
+        "icon": "cog-outline",
+        "label": "Categorias de interesse"
+      },
+      {
+        "icon": "lock-outline",
+        "label": "Segurança"
+      },
+      {
+        "icon": "notifications-none",
+        "label": "Notificações"
+      },
+      {
+        "icon": "delete-outline",
+        "label": "Encerrar conta"
+      }
+    ],
+    "identityConfirm": {
+      "title": "Confirmação de identidade.",
+      "subTitle": "Precisamos verificar sua relação com o CNPJ.",
+      "mainText": "Nessa etapa identificaremos qual é a sua relação com o CNPJ utilizado. Você poderá informar se é o titular, além de nos dizer se é um representante legal ou se está atuando como procurador.",
+      "subText": "Assim conseguimos direcionar o processo corretamente e garantir que tudo esteja em conformidade com os dados cadastrais.",
+      "identityRegister": "Quem está realizando o cadastro é:",
+      "confirmationOptions": {
+        "yes": "Sim",
+        "no": "Não"
+      }
+    },
+    "linkDocument": {
+      "title": "Vínculo com o CNPJ. ",
+      "subTitle": "Escolha a opção que descreve sua relação.",
+      "text": "Você é sócio(a) ou representante legal da empresa?",
+      "linkDocumentOptions": {
+        "partnerOption": "Sou sócio(a) ou representante legal",
+        "procuratorOption": "Sou procurador",
+        "notPartnerOrProcurator": "Não sou"
+      }
+    },
+    "confirmPartner": {
+      "title": "Identificação como sócio ou representante. ",
+      "subTitle": "Essa etapa é necessária para validar seu vínculo com a empresa.",
+      "text": "Você precisa enviar uma cópia do RG ou CNH que conste o número do seu CPF para validação da identidade, você também vai poder atualizar alguns dados da empresa. Vamos solicitar uma prova de vida com reconhecimento facial para sua segurança.",
+      "subText": "O processo é simples, seguro e rápido."
+    },
+    "confirmAttorney": {
+      "title": "Identificação como procurador. ",
+      "subTitle": "Essa etapa é necessária para validar seu vínculo com a empresa.",
+      "text": "Você precisará enviar uma cópia da procuração que comprove seu vínculo com a empresa, você também vai poder atualizar alguns dados da empresa.",
+      "subText": "Esses documentos serão analisados para validar sua identidade e o vínculo legal com o CNPJ acessado."
+    },
+    "unauthorizedAccess": {
+      "title": "Acesso não autorizado. ",
+      "subTitle": "Esta conta exige um vínculo formal com o CNPJ acessado.",
+      "text": "Você precisa ser sócio ou procurador acessar essa conta de pagamento.",
+      "button": "Entrar como PF"
+    },
+    "personalDataRegister": {
+      "title": "Cadastro de dados pessoais. ",
+      "subTitle": "Vamos começar com suas informações básicas.",
+      "text": "Como você está acessando esta conta em nome de uma empresa, precisamos primeiro registrar seus dados pessoais.",
+      "subText": "Em seguida, você poderá informar qual é o seu vínculo com o CNPJ e seguir com a validação."
+    },
+    "interestCategories": {
+      "title": "Categorias de interesse.",
+      "subTitle": "Personalize sua experiência",
+      "text": "Selecione as categorias que mais te interessam para receber ofertas personalizadas e visualizar produtos relevantes. Você pode alterar suas preferências a qualquer momento."
+    },
+    "updateRegistration": {
+      "title": "Atualização de cadastro.",
+      "description": "Envie seus documentos e atualize os dados cadastrais.",
+      "businessData": {
+        "title": "Dados comerciais",
+        "cnae": "CNAE"
+      },
+      "companyRepresantative": {
+        "title": "Dados pessoais do sócio/ representante legal ou procurador"
+      },
+      "businessAddress": {
+        "title": "Endereço comercial"
+      },
+      "accessData": {
+        "title": "Dados de acesso"
+      },
+      "documents": {
+        "title": "Documentação obrigatória",
+        "description": "RG ou CNH dentro do prazo de validade",
+        "helperText": "Preencha as informações e envie um único arquivo que contenha a frente e o verso do documento dentro do prazo de validade."
+      },
+      "facialRecognition": {
+        "title": "Segurança.",
+        "description": "Confirmação de identidade necessária.",
+        "helperText": "Para garantir a segurança de seus dados e de sua conta, é necessário realizar a confirmação de telefone e de identidade.",
+        "date": "Você pode optar por fazer depois até o %{time} do dia %{day}."
+      },
+      "confirmPhoneNumber": {
+        "title": "Segurança.",
+        "description": "Confirmação de identidade necessária."
+      },
+      "facialRecognitionSecurity": {
+        "description": "Para garantir a segurança de sua conta e seus dados, acesse o link enviado por WhatsApp e faça o reconhecimento facial.",
+        "whatsappInfo": "Um link para o reconhecimento facial foi enviado para o WhatsApp do número +55 (11) 91234-4321.",
+        "deadlineInfo": "A confirmação de identidade deve ser feita pelo titular do CPF cadastrado até o %{time} do dia %{day}.",
+        "resendLink": "Reenviar link",
+        "continue": "Continuar",
+        "doLater": "Fazer depois"
+      },
+      "facialRecognitionProcessing": {
+        "title": "Segurança. Confirmação de identidade necessária.",
+        "subtitle": "Processando seus dados.",
+        "processingTitle": "Validando seus dados...",
+        "processingSubtitle": "Isso pode levar alguns segundos. Aguarde."
+      },
+      "facialRecognitionError": {
+        "title": "Não foi possível confirmar a sua identidade",
+        "message": "A criação da sua conta foi recusada.",
+        "tryAgain": "Tentar novamente"
+      }
+    }
+  },
+  "offerPanel": {
+    "valuesBreakdown": {
+      "title": "Detalhamento dos valores",
+      "lastUpdate": "Última atualização ocorreu em %{date}",
+      "bidValueLabel": "Valor do lance atual",
+      "bidValueDescription": "O valor pode mudar de acordo com a disputa dos lances.",
+      "breakdownTitle": "Detalhamento dos encargos, comissão e fee plataforma",
+      "commission": "Comissão (%)",
+      "buyersPremium": "Buyers Premium",
+      "adminFees": "Encargos de administração",
+      "fixedValue2": "Valor fixo 2",
+      "percentage": "Porcentagem",
+      "transferServices": "Serviços de transferência",
+      "itemDescription": "É o valor pago para a parte intermediadora do leilão.",
+      "subtotalLabel": "Subtotal dos encargos, comissão e fee plataforma",
+      "totalLabel": "Valor total previsto"
+    },
+    "overTheCounter": {
+      "statusYouAre": "Você",
+      "statusLosing": "está perdendo",
+      "currentBid": "Lance atual",
+      "lastUpdate": "última atualização: %{date}",
+      "badgeLabel": "Mercado Balcão / Compre já",
+      "badgeLabelBuyNow": "Compre já",
+      "badgeLabelProposal": "Mercado Balcão",
+      "badgeLabelBoth": "Mercado Balcão ou Compre Já",
+      "saleValuePerUnit": "Valor de venda por unidade",
+      "quantityLabel": "Quantidade",
+      "unitsAvailable": "unidades disponíveis",
+      "lotsAvailable": "lotes disponíveis",
+      "lotsAvailableWithUnits": "%{available} lote(s) disponíveis de %{unitCount} unidade(s) cada",
+      "quantity": "Quantidade",
+      "totalValue": "Valor total",
+      "lotContainsUnits": "1 lote contém %{count} unidade(s)",
+      "totalValuePerLot": "Valor total por lote",
+      "analyzeCounterProposal": "Analisar contraproposta",
+      "addToCart": "Adicionar ao carrinho",
+      "confirmPurchase": "Confirmar compra",
+      "addToCartErrorTitle": "Erro ao adicionar",
+      "addToCartSuccessTitle": "Item adicionado!",
+      "addToCartSuccessDescription": "Novo item adicionado ao seu carrinho de compras",
+      "makeProposal": "Registrar Proposta Vinculativa",
+      "estimateValues": "Estimar comissões e demais valores",
+      "openingDate": "Data de abertura",
+      "seller": "Vendedor",
+      "sellerName": "nome do vendedor aqui",
+      "proposalsReceived": "%{count} propostas recebidas",
+      "viewMyPurchases": "Ver minhas compras",
+      "viewMyProposals": "Ver minhas propostas",
+      "proposalInfoTitle": "Proposta",
+      "proposalInfoDescription": "Nessa modalidade de venda, você pode comprar sem negociar clicando em 'Confirmar compra' ou negociar o valor enviando uma proposta em 'Faça sua proposta'.",
+      "installmentInfo": {
+        "title": "Lote %{lotNumber}",
+        "subtitle": "Venda parcelada",
+        "paymentMethods": "Formas de pagamento deste lote",
+        "quantity": "Quantidade:",
+        "totalLotValue": "Valor Total do Lote:",
+        "of": "de",
+        "eachInstallment": "cada parcela",
+        "feesNote": "(*) Encargos e comissões, quando houver, serão cobrados na primeira parcela."
+      },
+      "statusBadge": {
+        "reserved": "Reservado",
+        "removed": "Removido",
+        "sold": "Vendido",
+        "closed": "Encerrado",
+        "error": "Error"
+      },
+      "unavailableMessage": "Esse lote não está mais disponível para a compra"
+    },
+    "auction": {
+      "infoTitle": "Como participar em Tomada de Preço?",
+      "infoDescription": "Propostas poderão ser ofertadas em envelopes fechados durante um prazo determinado, sendo estes envelopes abertos pelo vendedor na data do encerramento do evento. O vendedor tem o direito de escolher qualquer uma das ofertas recebidas, mesmo que não seja a de maior valor.",
+      "infoConfirm": "Entendi"
+    },
+    "proposal": {
+      "title": "Vamos negociar?",
+      "description": "Informe o valor que gostaria de propor e o vendedor irá analisar. Caso sua proposta seja abaixo do esperado, você será informado.",
+      "proposalValueLabel": "Valor da proposta",
+      "quantityLabel": "Quantidade",
+      "totalValueLabel": "Valor total da proposta",
+      "estimateValuesLink": "Estimar comissões e demais valores",
+      "submitButton": "Fazer proposta",
+      "submitCounterProposalButton": "Fazer contraproposta",
+      "cutValueError": "O preço sugerido está abaixo do valor esperado, reavalie o valor proposto!",
+      "counterProposalBelowReceivedError": "O valor deve ser maior que a proposta atual.",
+      "perUnits": "por %{count} unidade(s)",
+      "perLots": "por %{count} lote(s) de %{unitCount} unidade(s)",
+      "eachLotContains": "Cada lote contém %{count} unidade(s)",
+      "eachLotContainsPrefix": "Cada lote contém",
+      "proposalValuePerLot": "Valor da proposta por lote de %{count} unidade(s)",
+      "proposalValuePerLotPrefix": "Valor da proposta por lote de",
+      "unitsText": "unidade(s)",
+      "unitsAvailable": "%{count} unidades disponíveis",
+      "selectAdvisor": "Selecione um assessor",
+      "advisorRequired": "É necessário selecionar um assessor para continuar"
+    },
+    "counterProposal": {
+      "title": "Contraproposta do Vendedor",
+      "expirationLabel": "A proposta expira em:",
+      "expirationDate": "%{date} às %{time}.",
+      "acceptButton": "Aceitar contraproposta",
+      "newCounterProposalButton": "Fazer nova contraproposta",
+      "refuseButton": "Recusar"
+    },
+    "proposalSuccess": {
+      "title": "Proposta enviada com sucesso",
+      "counterProposalTitle": "Contraproposta enviada com sucesso",
+      "acceptedCounterProposalTitle": "Contraproposta aceita com sucesso",
+      "refusedProposalTitle": "Proposta recusada com sucesso",
+      "description": "Acompanhe o status da proposta.",
+      "continueButton": "Continuar"
+    },
+    "proposalError": {
+      "title": "Sua proposta não foi enviada",
+      "counterProposalTitle": "Sua contraproposta não foi enviada",
+      "acceptedCounterProposalTitle": "Não foi possível aceitar a contraproposta",
+      "refusedProposalTitle": "Não foi possível recusar a proposta",
+      "description": "Não foi possível enviar sua proposta no momento, por favor tente novamente.",
+      "acceptedCounterProposalDescription": "Não foi possível aceitar a contraproposta no momento, por favor tente novamente.",
+      "refusedProposalDescription": "Não foi possível recusar a proposta no momento, por favor tente novamente.",
+      "retryButton": "Tentar novamente",
+      "sameProposal": "Você já enviou uma proposta com esse valor que está sendo analisada pelo Vendedor.",
+      "invalidQuantity": "Quantidade do carrinho excede a quantidade disponível.",
+      "generic": "Ocorreu um erro inesperado ao tentar enviar a proposta. Por favor, tente novamente! Caso o erro persista, entre em contato com o nosso Atendimento."
+    },
+    "proposalHistory": {
+      "title": "Histórico de propostas.",
+      "description": "Confira aqui suas propostas para o item [nome do item]"
+    },
+    "offerPanelMain": {
+      "completeList": "Todas as ofertas do evento",
+      "lotLabel": "LOTE",
+      "share": "Compartilhe",
+      "viewConditions": "Veja as condições",
+      "creditCardPayment": "Novidade! Pagamento com cartão de crédito",
+      "creditCardDescription": "Para pagamentos de lotes até R$ 80.000,00 neste evento você pode utilizar seu cartão de crédito para pagar com toda a segurança da sbXPAY.",
+      "creditCardCta": "Aproveite essa facilidade no pagamento e dê seu lance.",
+      "financingAvailable": "Esta oferta pode ser financiada",
+      "financingDescription": "Faça uma simulação sem compromisso para conhecer nossas condições especiais de parcelamento e negocie com nossos especialistas se quiser receber uma proposta personalizada.",
+      "simulateFinancing": "Simular financiamento",
+      "soldBy": "Vendido por",
+      "organizedBy": "Organizador por",
+      "auctioneer": "Leiloeiro",
+      "description": "Descrição"
+    },
+    "connectionProblem": {
+      "title": "Problema de conexão",
+      "description": "Verifique sua conexão com a internet e tente novamente.",
+      "button": "Tentar novamente"
+    },
+    "deactivateAutoBid": {
+      "title": "Desativar lance automático",
+      "description": "Tem certeza de que deseja cancelar o lance automático? Essa ação não remove os lances já feitos, apenas interrompe os próximos.",
+      "cancelButton": "Cancelar",
+      "confirmButton": "Confirmar"
+    }
+  },
+  "components": {
+    "mediaToggle": {
+      "photos": "Fotos",
+      "video": "Vídeo",
+      "map": "Mapa"
+    },
+    "auctionSchedule": {
+      "stage": "ª praça",
+      "initialBid": "Lance inicial:"
+    },
+    "bidTvSheet": {
+      "close": "Fechar",
+      "title": "Vamos te levar para a BidTV",
+      "description": "Acompanhe os lances desse evento na BidTV. Lembre-se que esse é um evento sequencial e que novos lotes só se iniciam depois que o anterior se encerrar.",
+      "goToBidTv": "Ir para a BidTV",
+      "goBack": "Voltar"
+    },
+    "eventConditionsSheet": {
+      "title": "Condições do Evento",
+      "noConditions": "Nenhuma condição disponível para este evento.",
+      "understood": "Entendi"
+    },
+    "confirmSheet": {
+      "close": "Fechar"
+    },
+    "categoriesFilterView": {
+      "title": "Filtros",
+      "localization": "Localização",
+      "clearFilters": "Remover filtros",
+      "apply": "Aplicar"
+    },
+    "offersList": {
+      "empty": "Nenhuma oferta encontrada"
+    }
+  },
+  "qualification": {
+    "conditions": {
+      "title": "Edital de leilão",
+      "eventConditions": "Condições do evento",
+      "agreement": "Concordo com as responsabilidades e disposições previstas nestas condições de venda e pagamento.",
+      "notificationsAgreement": "Desejo receber notificações sobre meus eventos pelo WhatsApp."
+    },
+    "allowedStatus": "Abertas para participação",
+    "restrictedStatus": "Apenas para pessoa jurídica",
+    "acceptanceTerms": {
+      "title": "Termos de aceite",
+      "mainText": "Este é um evento com declaração de aceite das condições judiciais obrigatório",
+      "firstText": "Para concluir a habilitação e participar deste evento é necessário o preenchimento da declaração de aceite com autenticação em cartório, conforme previsto no ",
+      "noticeConditions": "Edital / Condições de Venda e Pagamento. ",
+      "secondText": "Quando o documento estiver autenticado você deverá adicioná-lo em habilitações.",
+      "myQualifications": "minhas habilitações.",
+      "infoText": "Por que precisamos destes documentos? Este é um evento restrito, do qual apenas usuários com documentações específicas no Edital / Condições de Venda e Pagamento podem participar.",
+      "downloadDeclaration": "Baixar declaração",
+      "continueQualification": "Continuar habilitação"
+    },
+    "spouse": {
+      "title": "Cônjuge",
+      "finishRegistration": "Complete seu cadastro. ",
+      "text": "Para se habilitar neste evento que complete as informações do seu cadastro.",
+      "dataTitle": "Dados do companheiro",
+      "fullName": "Nome completo",
+      "fullNamePlaceholder": "Nome completo",
+      "nationality": "Nacionalidade",
+      "nationalityPlaceholder": "Nacionalidade",
+      "cpf": "CPF",
+      "cpfPlaceholder": "CPF",
+      "rg": "RG",
+      "rgPlaceholder": "RG",
+      "profession": "Profissão",
+      "professionPlaceholder": "Profissão",
+      "marriageRegime": "Regime de casamento",
+      "marriageRegimePlaceholder": "Regime de casamento",
+      "partialCommunity": "Comunhão Parcial de Bens",
+      "universalCommunity": "Comunhão Universal de Bens",
+      "totalSeparation": "Separação Total de Bens",
+      "mandatorySeparation": "Separação Obrigatória de Bens",
+      "finalParticipation": "Participação Final nos Aquestos",
+      "brazilian": "Brasileiro(a)",
+      "foreign": "Estrangeiro(a)",
+      "confirm": "Confirmar",
+      "cancel": "Cancelar",
+      "errors": {
+        "civilStateRequired": "Estado civil é obrigatório",
+        "professionRequired": "Profissão é obrigatória",
+        "allFieldsRequired": "Todos os campos do cônjuge são obrigatórios quando casado"
+      }
+    },
+    "rightOfPreference": {
+      "title": "Direito de preferência",
+      "mainText": "Deseja utilizar direito de preferência?",
+      "checkboxLabel": "Declaro que atendo aos requisitos previstos em lei (Art. 513 do Código Civil - Lei 10406/02) e pretendo exercer o Direito de Preferência na arrematação.",
+      "batchSession": {
+        "title": "Em qual lote deseja utilizar o direito de preferência?",
+        "text": "Para utilizar o seu direito de preferência é necessário selecionar o lote específico para a qual você tem direito e, em seguida, enviar a documentação comprobatória."
+      }
+    },
+    "documents": {
+      "title": "Documentos. ",
+      "subTitle": "Envie ou revise seus documentos.",
+      "text": "As ofertas desse evento estão divididas em 2 grupo(s). Algumas ofertas possuem restrições, como: envio de documentos e é necessário aceitar os termos de participação. Em caso de dúvidas, consulte o ",
+      "hyperText": "Edital/Condições de Venda e Pagamento",
+      "insertFile": "Insira um arquivo para dar lances nessas ofertas:",
+      "fileFormat": "Formatos de arquivo JPG, JPEG, PNG ou PDF com no máximo 5MB",
+      "groupsTitle": "Grupos de Ofertas que Exigem Documentos",
+      "loadingGroups": "Carregando grupos de ofertas...",
+      "noGroupsFound": "Nenhum grupo de ofertas encontrado que exija documentos.",
+      "enabled": "Habilitado",
+      "pending": "Pendente",
+      "depositValue": "Valor caução: %{value}",
+      "requestGuaranteeRefund": "Solicitar devolução da caução",
+      "guaranteeStatus": "Status: %{status}",
+      "guaranteeRefundConfirm": {
+        "title": "Tem certeza que quer solicitar a devolução da caução?",
+        "warningMessage": "Ao solicitar a devolução da caução você não poderá mais participar desse grupo, sendo necessário uma nova reserva caso você queira voltar a participar.",
+        "refundInfo": "Para reservas feitas via PIX ou saldo da Conta de Pagamento, o valor ficará disponível na sua Conta sbX Pay.",
+        "confirmButton": "Confirmar solicitação",
+        "cancelButton": "Cancelar"
+      },
+      "seller": "Vendedor",
+      "termo_responsabilidade": "Termo de Responsabilidade",
+      "termo_resposabilinade": "Termo de Responsabilidade",
+      "requestDate": "Data da solicitação",
+      "confirmationDate": "Data de confirmação",
+      "requiredDocuments": "Documentos necessários",
+      "reviewDocuments": "Revisar Documentos",
+      "confirmDocuments": "Confirmar Documentos",
+      "processing": "Processando...",
+      "existingDocuments": "Documentos existentes na sua carteira:",
+      "orUploadNew": "ou faça upload de um novo documento",
+      "expirationDate": "Data de expiração",
+      "requiredDocumentation": "Documentação necessária para habilitação restrita",
+      "selectDocumentOrPhoto": "Selecione um documento ou foto",
+      "documentPending": "Documento pendente",
+      "documentAnalyzing": "Documento em análise",
+      "documentApproved": "Documento aprovado",
+      "documentRejected": "Documento rejeitado",
+      "documentPendingMessage": "Formatos de arquivo JPG, JPEG, PNG ou PDF com no máximo 50MB",
+      "documentAnalyzingMessage": "O documento foi enviado e está em análise. Assim que a análise for concluída, você será avisado.",
+      "documentApprovedMessage": "Documento aprovado e válido para participação no evento.",
+      "documentRejectedMessage": "Documento rejeitado. Por favor, envie um novo documento ou revise o documento atual.",
+      "documentNeedsReviewMessage": "O documento foi reprovado e precisa de revisão.",
+      "addNew": "Adicionar novo",
+      "goToEvent": "Ir para o evento",
+      "rightOfPreference": "Direito de Preferência",
+      "rightOfPreferenceMessage": "Direito de preferência solicitado. Acompanhe a análise do(s) documento(s) para confirmação.",
+      "selectDocument": "Selecionar Documento",
+      "uploadNewDocument": "Fazer upload de novo documento",
+      "moreInformation": "Mais informações",
+      "addDocument": "Adicionar documento",
+      "leaveForLater": "Deixar para depois",
+      "sendDocument": "Enviar documento",
+      "clickToUse": "Clique para usar este documento",
+      "requirementTag": "Ofertas que exigem o documento",
+      "insertFileHint": "Insira um arquivo para dar lances nessa oferta",
+      "uploadDocument": "Salvar documento",
+      "cnh": "RG ou CNH dentro do prazo de validade",
+      "cpf": "CPF",
+      "rg": "RG dentro do prazo de validade",
+      "SALES_RECIPT": "Recibo de venda",
+      "SALES_RECEIPT": "Recibo de venda",
+      "comprovanteResidencia": "Comprovante de residência",
+      "certidao_nascimento": "Certidão de Nascimento",
+      "rg_conjuge": "RG do Cônjuge",
+      "cartao_produtor_rural": "Cartão de Produtor Rural",
+      "declaracaoAceite": "Declaração de aceite das condições judiciais",
+      "declaracaoAceiteInfoMessage": "Caso tenha dúvidas ou precise baixar o documento,",
+      "declaracaoAceiteLink": "verifique mais informações sobre declaração de aceite."
+    },
+    "payments": {
+      "title": "Pagamento",
+      "mainText": "Este é um evento com encargos de conveniência.",
+      "infoFirst": "Para garantir a comodidade da sua participação online neste evento serão cobrados encargos de conveniência, conforme previsto no ",
+      "infoHyper": "Edital / Condições de Venda e Pagamento",
+      "infoSecond": ". Se estiver aguardando a avaliação de alguma documentação, você pode optar por fazer o pagamento depois e retomar o processo de habilitação nesta etapa.",
+      "methodTitle": "Pagar encargos utilizando sbXPAY",
+      "pixMethod": "Pagamento via QRcode ou Pix Copia e Cola",
+      "detailsTitle": "Detalhes da compra",
+      "chooseOrCreateNewCard": "Escolher ou adicionar outro cartão",
+      "newCardInfo": "Informe os dados abaixo como aparecem no seu cartão",
+      "paymentMethods": "Forma de pagamento:",
+      "selectPaymentMethod": "Selecione forma de pagamento",
+      "total": "TOTAL",
+      "formsOfParticipation": "Outras formas de participação",
+      "inPersonParticipation": "Participação presencial",
+      "participateInPerson": "Participar presencialmente",
+      "firstParticipationText": "Você pode participar do evento presencialmente no endereço, dia e horário indicados no ",
+      "hyperParticipationText": "Edital / Condições de Venda e Pagamento",
+      "secondParticipationText": ". É necessário levar um documento com foto, CPF ou CNPJ. Caso você vença a disputa, o pagamento do bem deverá ser realizado pela sua conta sbXPAY."
+    },
+    "conclusion": {
+      "title": "Conclusão",
+      "congratulations": "Parabéns",
+      "congratulationsSubTitle": "Você se habilitou para os seguintes lotes:",
+      "submitButton": "Ir para o evento",
+      "finalAlert": "Uma cópia das condições de venda e pagamento será enviada para seu e-mail."
+    },
+    "pendingIssues": {
+      "title": "Pendências",
+      "mainText": "Solicitação de habilitação recebida",
+      "showEventConditions": "Ver condições do evento",
+      "sendDocuments": "Enviar documentos na Minha conta",
+      "firstExpandedText": "Alguns grupos podem exigir documentação específica. Confira abaixo a situação de cada grupo."
+    }
+  },
+  "payment": {
+    "processingOrder": {
+      "title": "Processando ordem",
+      "subtitle": "Aguarde enquanto processamos sua ordem de pagamento de caução"
+    },
+    "deposit": {
+      "title": "Como deseja pagar a caução?",
+      "subtitle": "Selecione a forma de pagamento",
+      "errorProcessing": "Erro ao processar ordem de pagamento"
+    }
+  },
+  "guaranteePayment": {
+    "confirmed": {
+      "title": "Pagamento de Caução Concluído!",
+      "subtitle": "Seu pagamento de caução foi processado com sucesso.",
+      "amount": "Valor pago",
+      "method": "Método de pagamento",
+      "info": "Você será redirecionado para continuar o processo de habilitação.",
+      "continueButton": "Continuar"
+    }
+  },
+  "fixDocuments": {
+    "title": "Cadastro",
+    "subtitle": "Atualize os seus dados cadastrais.",
+    "updateButton": "Atualizar",
+    "loadingData": "Carregando dados...",
+    "sections": {
+      "companyData": "Dados da Empresa",
+      "representativeLegal": "Representante Legal",
+      "representativeLegalQuestion": "Você é sócio(a) ou representante legal da empresa?",
+      "personalData": "Dados Pessoais",
+      "requiredDocuments": "Documentação obrigatória"
+    },
+    "fields": {
+      "cnpj": "CNPJ",
+      "fantasyName": "Nome Fantasia",
+      "fullName": "Nome Completo",
+      "email": "E-mail",
+      "phoneNumber": "Celular",
+      "dateOfBirth": "Data de nascimento",
+      "rg": "RG",
+      "mothersName": "Nome da Mãe",
+      "cpf": "CPF",
+      "gender": "Gênero",
+      "civilState": "Estado civil",
+      "issueDate": "Data de emissão",
+      "expirationDate": "Data de validade"
+    },
+    "documentPicker": {
+      "selectDocument": "Selecionar documento",
+      "selectDocumentMessage": "Escolha uma opção",
+      "cancel": "Cancelar",
+      "takePhoto": "Tirar foto",
+      "chooseFromGallery": "Escolher da galeria",
+      "chooseDocument": "Escolher documento"
+    },
+    "documentMessages": {
+      "newDocumentSelected": "Novo documento selecionado: %{fileName}",
+      "documentIncorrect": "Documento incorreto: %{reason}"
+    },
+    "confirmPhone": {
+      "title": "Confirmar telefone",
+      "description": "Digite o código enviado para seu telefone."
+    },
+    "accountUnderAnalysis": {
+      "title": "Criação de conta em análise",
+      "description": "As informações e a documentação para a criação de sua conta de pessoa jurídica estão em análise. Você será avisado(a) em até 72 horas, quando a análise for concluída.",
+      "goToLogin": "Ir para Login"
+    }
+  }
+}
